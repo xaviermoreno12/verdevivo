@@ -1,0 +1,60 @@
+{
+  "sitio": {
+    "nombre": "VerdeVivo",
+    "tagline": "Jardines verticales y huertas en casa, sin secretos",
+    "dominio": "https://xaviermoreno12.github.io",
+    "base": "/verdevivo",
+    "nicho": "jardín vertical y huerta en casa",
+    "idioma": "es",
+    "pais": "AR",
+    "descripcion": "Guías simples para armar tu jardín vertical y cultivar tu propia huerta orgánica en casa, aunque nunca hayas tenido una planta viva más de una semana.",
+    "autor": "Equipo VerdeVivo",
+    "ga_id": "",
+    "gsc_verification": ""
+  },
+  "marca": {
+    "color_primario": "#15803d",
+    "color_secundario": "#2c1e12",
+    "color_acento": "#d97706",
+    "fondo": "#ffffff",
+    "fuente_titulos": "Fraunces",
+    "fuente_texto": "Nunito Sans"
+  },
+  "productos": [
+    {
+      "id": "jardin-vertical",
+      "codigo": "L81265980D",
+      "nombre": "3 Cursos en 1: Jardín Vertical Profesional",
+      "precio": "US$35",
+      "moneda": "USD",
+      "hotlink": "https://go.hotmart.com/L81265980D?ap=559a",
+      "categoria": "Jardinería",
+      "rating": 4.7,
+      "descripcion_corta": "Formación completa en jardinería vertical: creá tu propio jardín vertical, cuadros vivos y huertas verticales paso a paso, aunque arranques de cero.",
+      "beneficios": [
+        "Crear y mantener jardines verticales como un profesional",
+        "Comunidad exclusiva + asesorías por videollamada",
+        "Método rápido y fácil, ideal para principiantes"
+      ],
+      "para_quien": "Amantes de las plantas, jardineros y cualquiera que quiera armar su jardín vertical en casa.",
+      "destacado": true
+    },
+    {
+      "id": "alimentos-organicos",
+      "codigo": "V77773424H",
+      "nombre": "Cultiva tus Alimentos Orgánicos",
+      "precio": "Ver precio",
+      "moneda": "USD",
+      "hotlink": "https://go.hotmart.com/V77773424H?ap=480f",
+      "categoria": "Huerta",
+      "rating": 4.6,
+      "descripcion_corta": "MasterClass para cultivar tus propios vegetales en casa de forma orgánica, sin pesticidas ni agroquímicos, incluso en espacios chicos.",
+      "beneficios": [
+        "Cultivar vegetales en casa para toda la familia",
+        "Comer más sano, sin químicos",
+        "Método simple, sirve para balcones y patios chicos"
+      ],
+      "para_quien": "Personas que quieren comer más sano y producir su propia comida en casa."
+    }
+  ]
+}

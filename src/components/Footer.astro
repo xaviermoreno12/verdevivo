@@ -1,0 +1,19 @@
+---
+import { SITIO } from '../lib/sitio.ts';
+const anio = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="contenedor">
+    <p class="disclaimer">
+      <strong>Aviso de afiliados:</strong> {SITIO.nombre} participa en programas de afiliados
+      (incluido Hotmart). Si comprás a través de nuestros enlaces podemos recibir una comisión,
+      sin costo adicional para vos. Solo recomendamos productos que consideramos de valor.
+    </p>
+    <p class="disclaimer">
+      <strong>Aviso de salud:</strong> El contenido de este sitio es informativo y no reemplaza el
+      consejo de un profesional de la salud. Consultá a tu médico antes de empezar cualquier plan de
+      alimentación, ejercicio o suplementación.
+    </p>
+    <p class="muted">© {anio} {SITIO.nombre}. Todos los derechos reservados.</p>
+  </div>
+</footer>

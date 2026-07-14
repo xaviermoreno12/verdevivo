@@ -1,0 +1,24 @@
+---
+// Caja de CTA de afiliado. rel="sponsored nofollow" (buena práctica SEO para links de afiliado).
+import { PRODUCTO_DESTACADO } from '../lib/sitio.ts';
+
+interface Props {
+  producto?: typeof PRODUCTO_DESTACADO;
+  titulo?: string;
+  texto?: string;
+}
+const { producto = PRODUCTO_DESTACADO, titulo, texto } = Astro.props;
+---
+<div class="cta-box">
+  <h3>{titulo ?? `¿Querés probar ${producto.nombre}?`}</h3>
+  <p>{texto ?? producto.descripcion_corta}</p>
+  <p class="precio">{producto.precio}</p>
+  <a
+    class="btn"
+    href={producto.hotlink}
+    target="_blank"
+    rel="sponsored nofollow noopener"
+  >
+    Ver {producto.nombre} →
+  </a>
+</div>

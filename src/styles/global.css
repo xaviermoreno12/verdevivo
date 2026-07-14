@@ -1,0 +1,140 @@
+/* ============================================================
+   Estilos globales — plantilla fábrica SEO (nicho salud/fitness)
+   Los colores de marca se inyectan como CSS vars desde el Layout
+   (salen de sitio.config.json), así cada sitio tiene su paleta.
+   ============================================================ */
+
+:root {
+  --ancho-max: 720px;
+  --ancho-ancho: 1080px;
+  --radio: 14px;
+  --sombra: 0 1px 3px rgba(15, 23, 42, .08), 0 8px 24px rgba(15, 23, 42, .06);
+  --gris-texto: #334155;
+  --gris-suave: #64748b;
+  --gris-borde: #e2e8f0;
+  --gris-fondo: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; margin: 0; }
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+body {
+  font-family: var(--fuente-texto, 'Inter'), system-ui, sans-serif;
+  color: var(--gris-texto);
+  background: var(--fondo, #fff);
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--fuente-titulos, 'Bricolage Grotesque'), system-ui, sans-serif;
+  color: var(--secundario, #0f172a);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3rem); }
+h2 { font-size: clamp(1.5rem, 3.5vw, 2.1rem); margin-top: 2.4em; }
+h3 { font-size: clamp(1.2rem, 2.5vw, 1.5rem); margin-top: 1.8em; }
+
+p, ul, ol { margin-bottom: 1.1em; }
+ul, ol { padding-left: 1.3em; }
+li { margin-bottom: .4em; }
+
+a { color: var(--primario, #16a34a); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { max-width: 100%; height: auto; border-radius: var(--radio); display: block; }
+
+.contenedor { max-width: var(--ancho-max); margin-inline: auto; padding-inline: 1.25rem; }
+.contenedor-ancho { max-width: var(--ancho-ancho); margin-inline: auto; padding-inline: 1.25rem; }
+
+/* ---- Botón / CTA ---- */
+.btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  background: var(--primario, #16a34a);
+  color: #fff; font-weight: 700; font-family: var(--fuente-titulos), sans-serif;
+  padding: .95rem 1.6rem; border-radius: 999px; border: none;
+  box-shadow: var(--sombra); transition: transform .15s ease, box-shadow .15s ease;
+  font-size: 1.05rem; cursor: pointer; text-align: center;
+}
+.btn:hover { transform: translateY(-2px); text-decoration: none; box-shadow: 0 10px 30px rgba(22,163,74,.28); }
+.btn-acento { background: var(--acento, #84cc16); color: var(--secundario, #0f172a); }
+
+/* ---- Header ---- */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(255,255,255,.85); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--gris-borde);
+}
+.site-header .contenedor-ancho { display: flex; align-items: center; justify-content: space-between; padding-block: .9rem; }
+.logo { font-family: var(--fuente-titulos), sans-serif; font-weight: 800; font-size: 1.3rem; color: var(--secundario); letter-spacing: -.03em; }
+.logo span { color: var(--primario); }
+.nav a { color: var(--secundario); font-weight: 600; margin-left: 1.4rem; font-size: .98rem; }
+
+/* ---- Hero ---- */
+.hero { padding: clamp(3rem, 8vw, 5.5rem) 0 3rem; text-align: center; background:
+  radial-gradient(1200px 400px at 50% -10%, color-mix(in srgb, var(--acento) 22%, transparent), transparent); }
+.hero p.sub { font-size: 1.2rem; color: var(--gris-suave); max-width: 34rem; margin: 1rem auto 2rem; }
+.pill { display:inline-block; background: color-mix(in srgb, var(--primario) 12%, #fff); color: var(--primario);
+  font-weight:700; font-size:.85rem; padding:.35rem .9rem; border-radius:999px; margin-bottom:1.2rem; }
+
+/* ---- Tarjetas ---- */
+.grid { display: grid; gap: 1.5rem; }
+@media (min-width: 640px) { .grid-2 { grid-template-columns: 1fr 1fr; } .grid-3 { grid-template-columns: repeat(3,1fr); } }
+.card { background:#fff; border:1px solid var(--gris-borde); border-radius: var(--radio); overflow:hidden;
+  box-shadow: var(--sombra); transition: transform .15s ease; display:flex; flex-direction:column; }
+.card:hover { transform: translateY(-3px); }
+.card .card-body { padding: 1.2rem 1.3rem 1.4rem; }
+.card h3 { margin-top: 0; }
+.card .meta { font-size: .85rem; color: var(--gris-suave); }
+
+/* ---- Reseña de producto ---- */
+.reseña { background: var(--gris-fondo); border:1px solid var(--gris-borde); border-radius: var(--radio);
+  padding: 1.6rem; box-shadow: var(--sombra); }
+.reseña .rating { color: #f59e0b; font-weight: 700; }
+.reseña ul { list-style: none; padding-left: 0; }
+.reseña ul li { padding-left: 1.7rem; position: relative; }
+.reseña ul li::before { content: "✓"; position:absolute; left:0; color: var(--primario); font-weight: 800; }
+.precio { font-family: var(--fuente-titulos), sans-serif; font-size: 1.6rem; font-weight: 800; color: var(--secundario); }
+
+/* ---- Prosa (posts) ---- */
+.prose { max-width: var(--ancho-max); }
+.prose h2, .prose h3 { scroll-margin-top: 5rem; }
+.prose blockquote { border-left: 4px solid var(--acento); padding-left: 1.1rem; color: var(--gris-suave); font-style: italic; margin: 1.4em 0; }
+.prose table { width: 100%; border-collapse: collapse; margin: 1.4em 0; font-size: .95rem; }
+.prose th, .prose td { border: 1px solid var(--gris-borde); padding: .6rem .8rem; text-align: left; }
+.prose th { background: var(--gris-fondo); }
+
+/* ---- CTA embebido ---- */
+.cta-box { background: linear-gradient(135deg, color-mix(in srgb, var(--primario) 10%, #fff), color-mix(in srgb, var(--acento) 12%, #fff));
+  border: 1px solid color-mix(in srgb, var(--primario) 25%, #fff); border-radius: var(--radio);
+  padding: 1.6rem; margin: 2rem 0; text-align: center; }
+.cta-box h3 { margin-top: 0; }
+
+/* ---- FAQ ---- */
+.faq details { border-bottom: 1px solid var(--gris-borde); padding: .9rem 0; }
+.faq summary { font-weight: 700; cursor: pointer; font-family: var(--fuente-titulos), sans-serif; color: var(--secundario); }
+.faq details[open] summary { color: var(--primario); }
+
+/* ---- Disclaimer YMYL ---- */
+.disclaimer { font-size: .85rem; color: var(--gris-suave); background: var(--gris-fondo);
+  border: 1px dashed var(--gris-borde); border-radius: var(--radio); padding: 1rem 1.2rem; margin: 2rem 0; }
+
+/* ---- Footer ---- */
+.site-footer { background: var(--secundario, #0f172a); color: #cbd5e1; margin-top: 4rem; padding: 2.5rem 0; font-size: .92rem; }
+.site-footer a { color: #fff; }
+.site-footer .disclaimer { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.15); color: #94a3b8; }
+
+/* ---- Utilidades ---- */
+.center { text-align: center; }
+.mt-2 { margin-top: 2rem; } .mb-1 { margin-bottom: 1rem; }
+.muted { color: var(--gris-suave); }

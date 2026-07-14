@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Reseña from '../components/Reseña.astro';
+import PostCard from '../components/PostCard.astro';
+import { SITIO, PRODUCTOS, urlAbsoluta, url } from '../lib/sitio.ts';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft && data.pubDate.valueOf() <= Date.now()))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 6);
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITIO.nombre,
+  url: urlAbsoluta('/'),
+  description: SITIO.descripcion,
+  inLanguage: SITIO.idioma,
+};
+---
+<Layout title={`${SITIO.nombre} — ${SITIO.tagline}`} description={SITIO.descripcion} tipo="website" schema={schema}>
+  <section class="hero">
+    <div class="contenedor">
+      <span class="pill">Salud sin humo 🌱</span>
+      <h1>{SITIO.tagline}</h1>
+      <p class="sub">{SITIO.descripcion}</p>
+      <a href={url('/blog')} class="btn btn-acento">Leer las guías →</a>
+    </div>
+  </section>
+
+  <section class="contenedor mt-2">
+    <h2>Lo que recomendamos</h2>
+    <p class="muted">Probamos y analizamos programas para que no tires tu plata en dietas mágicas.</p>
+    <div class="grid mt-2">
+      {PRODUCTOS.map((p) => <Reseña producto={p} />)}
+    </div>
+  </section>
+
+  {posts.length > 0 && (
+    <section class="contenedor-ancho mt-2">
+      <h2>Últimas guías del blog</h2>
+      <div class="grid grid-3 mt-2">
+        {posts.map((post) => <PostCard post={post} />)}
+      </div>
+    </section>
+  )}
+</Layout>

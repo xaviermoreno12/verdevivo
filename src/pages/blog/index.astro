@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { SITIO, urlAbsoluta } from '../../lib/sitio.ts';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft && data.pubDate.valueOf() <= Date.now()))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: `Blog | ${SITIO.nombre}`,
+  url: urlAbsoluta('/blog'),
+  description: `Guías y consejos sobre ${SITIO.nicho}.`,
+};
+---
+<Layout
+  title="Blog"
+  description={`Guías, consejos y reseñas honestas sobre ${SITIO.nicho}. Todo lo que necesitás saber, sin humo.`}
+  canonicalPath="/blog"
+  schema={schema}
+>
+  <section class="contenedor-ancho" style="padding-top:3rem">
+    <h1>Blog</h1>
+    <p class="sub muted">Guías honestas sobre {SITIO.nicho}. {posts.length} artículos y sumando.</p>
+    {posts.length === 0 ? (
+      <p class="muted mt-2">Todavía no hay artículos publicados. Volvé pronto 👀</p>
+    ) : (
+      <div class="grid grid-3 mt-2">
+        {posts.map((post) => <PostCard post={post} />)}
+      </div>
+    )}
+  </section>
+</Layout>

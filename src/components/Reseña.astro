@@ -1,0 +1,33 @@
+---
+// Bloque de reseña de un producto (para la homepage). Un sitio puede tener varios.
+interface Props {
+  producto: {
+    nombre: string;
+    precio: string;
+    hotlink: string;
+    rating?: number;
+    descripcion_corta: string;
+    beneficios?: string[];
+    para_quien?: string;
+  };
+}
+const { producto } = Astro.props;
+const estrellas = producto.rating ? '★'.repeat(Math.round(producto.rating)) + '☆'.repeat(5 - Math.round(producto.rating)) : '';
+---
+<article class="reseña" id={producto.nombre.toLowerCase().replace(/\s+/g, '-')}>
+  <h3>{producto.nombre}</h3>
+  {producto.rating && (
+    <p><span class="rating">{estrellas}</span> <span class="muted">{producto.rating}/5</span></p>
+  )}
+  <p>{producto.descripcion_corta}</p>
+  {producto.beneficios && producto.beneficios.length > 0 && (
+    <ul>
+      {producto.beneficios.map((b) => <li>{b}</li>)}
+    </ul>
+  )}
+  {producto.para_quien && <p class="muted"><strong>Ideal para:</strong> {producto.para_quien}</p>}
+  <p class="precio">{producto.precio}</p>
+  <a class="btn" href={producto.hotlink} target="_blank" rel="sponsored nofollow noopener">
+    Ver oferta oficial →
+  </a>
+</article>

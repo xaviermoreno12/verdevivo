@@ -1,0 +1,93 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CTA from '../../components/CTA.astro';
+import { getCollection, render } from 'astro:content';
+import { SITIO, PRODUCTOS, PRODUCTO_DESTACADO, urlAbsoluta } from '../../lib/sitio.ts';
+
+export async function getStaticPaths() {
+  // Solo genera los posts cuya fecha ya llegó (drip: 1 por día con rebuild diario)
+  const posts = await getCollection('blog', ({ data }) => !data.draft && data.pubDate.valueOf() <= Date.now());
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const d = post.data;
+const fecha = d.pubDate.toLocaleDateString('es-AR', { day: 'numeric', month: 'long', year: 'numeric' });
+const producto = PRODUCTOS.find((p) => p.id === d.productoId) ?? PRODUCTO_DESTACADO;
+
+const schema: Record<string, any>[] = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: d.title,
+    description: d.description,
+    datePublished: d.pubDate.toISOString(),
+    dateModified: (d.updatedDate ?? d.pubDate).toISOString(),
+    author: { '@type': 'Organization', name: SITIO.autor || SITIO.nombre },
+    publisher: { '@type': 'Organization', name: SITIO.nombre },
+    mainEntityOfPage: urlAbsoluta(`/blog/${post.id}`),
+    ...(d.heroImage ? { image: d.heroImage } : {}),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: urlAbsoluta('/') },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: urlAbsoluta('/blog') },
+      { '@type': 'ListItem', position: 3, name: d.title, item: urlAbsoluta(`/blog/${post.id}`) },
+    ],
+  },
+];
+if (d.faqs && d.faqs.length > 0) {
+  schema.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: d.faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  });
+}
+---
+<Layout
+  title={d.title}
+  description={d.description}
+  canonicalPath={`/blog/${post.id}`}
+  tipo="article"
+  ogImage={d.heroImage}
+  schema={schema}
+>
+  <article class="contenedor" style="padding-top:2.5rem">
+    <p class="meta muted"><a href="../">← Volver al blog</a> · {fecha}</p>
+    <h1>{d.title}</h1>
+    {d.heroImage && (
+      <img src={d.heroImage} alt={d.heroAlt ?? d.title} width="720" height="405"
+        style="aspect-ratio:16/9;object-fit:cover;margin:1.5rem 0" />
+    )}
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    <CTA producto={producto} />
+
+    {d.faqs && d.faqs.length > 0 && (
+      <section class="faq mt-2">
+        <h2>Preguntas frecuentes</h2>
+        {d.faqs.map((f) => (
+          <details>
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </section>
+    )}
+
+    <p class="disclaimer">
+      ⚕️ Este artículo es informativo y no reemplaza el consejo médico profesional. Consultá a tu
+      médico antes de cambiar tu alimentación, actividad física o suplementación.
+    </p>
+  </article>
+</Layout>

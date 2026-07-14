@@ -1,0 +1,12 @@
+---
+import { SITIO, url } from '../lib/sitio.ts';
+---
+<header class="site-header">
+  <div class="contenedor-ancho">
+    <a href={url('/')} class="logo">{SITIO.nombre.split(' ')[0]}<span>{SITIO.nombre.split(' ').slice(1).join(' ')}</span></a>
+    <nav class="nav">
+      <a href={url('/')}>Inicio</a>
+      <a href={url('/blog')}>Blog</a>
+    </nav>
+  </div>
+</header>
