@@ -27,6 +27,8 @@ faqs:
 draft: false
 ---
 
+Un jardín vertical para balcón optimiza el espacio al aprovechar la pared, mejora la calidad del aire al purificarlo y ofrece un aislamiento térmico, manteniendo el balcón fresco en verano y cálido en invierno. Elegí plantas que se adapten a la luz de tu balcón para crear un rincón verde espectacular.
+
 # Transformá tu balcón con un jardín vertical espectacular
 
 ¿Te imaginas tener un rincón verde en tu balcón que enamore a cualquiera? ¡Sí, es posible! Un jardín vertical para balcón no solo embellece tu espacio, sino que también mejora la calidad del aire y te conecta un poco más con la naturaleza. Y si te preocupa el mantenimiento, no te asustes: hoy te traigo tips y trucos para que te conviertas en un experto en jardinería vertical.

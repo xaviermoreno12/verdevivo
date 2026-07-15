@@ -27,6 +27,8 @@ faqs:
 draft: false
 ---
 
+Un jardín vertical en la cocina puede incluir hierbas frescas como albahaca, perejil y romero, facilitando el acceso a ingredientes aromáticos para tus platos. En un balcón, podés usar macetas colgantes o paneles modulares para cultivar flores como petunias o violetas, transformando el espacio en un colorido oasis.
+
 # Jardín vertical ideas para transformar tu espacio
 
 ¿Te imaginás tener un jardín vertical en tu casa y que tus amigos te pregunten si contrataste a un paisajista para hacerlo? Bueno, no estás solo. Cada vez más personas se están sumando a esta tendencia que no solo embellece el hogar, sino que también aporta un montón de beneficios, como mejorar la calidad del aire y crear un ambiente más relajante. Así que, si estás pensando en darle un toque verde a tu espacio, ¡este artículo es para vos!

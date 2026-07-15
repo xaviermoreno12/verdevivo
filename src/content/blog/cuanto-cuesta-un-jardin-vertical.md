@@ -27,6 +27,8 @@ faqs:
 draft: false
 ---
 
+El costo de un jardín vertical varía según el tamaño, tipo de plantas y estructura. El precio por m² puede cambiar considerablemente: un jardín de 1 m² no tendrá el mismo costo que uno de 5 m², y las plantas suculentas suelen ser más económicas que las tropicales.
+
 # ¿Cuánto cuesta un jardín vertical? Descubrilo ya
 
 Si alguna vez te has preguntado cuánto cuesta un jardín vertical, ¡no estás solo! Este tipo de jardines son una tendencia que llegó para quedarse, pero claro, siempre hay que tener en cuenta el bolsillo. Y hablando de eso, ¿sabías que el costo de un jardín vertical puede ser tan variable como el clima en Buenos Aires? A veces llueve, a veces hace sol, y a veces, ¡los precios se disparan!

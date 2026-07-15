@@ -27,6 +27,8 @@ faqs:
 draft: false
 ---
 
+Para hacer un jardín vertical, elegí una pared que reciba luz indirecta, instalá una malla o panel base firme, colocá macetas con buen drenaje, llenalas con tierra para macetas y plantá las especies que elegiste. Así disfrutarás de un hermoso jardín sin sacrificar espacio.
+
 # Cómo hacer jardín vertical: ¡Transformá tu espacio verde!
 
 ¿Te imaginas tener un jardín en casa, pero sin sacrificar espacio? ¡Los jardines verticales son la solución perfecta! Además, son tan lindos que hasta tu planta de interior va a querer lucirse. Pero, antes de que vayas a colgar macetas en la pared como si no hubiera un mañana, vamos a ver cómo hacer un jardín vertical paso a paso.

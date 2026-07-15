@@ -27,6 +27,8 @@ faqs:
 draft: false
 ---
 
+Para un jardín vertical, las plantas ideales incluyen helechos, suculentas, hiedra, plantas aéreas (Tillandsias) y cactus. Estas plantas son resistentes, fáciles de cuidar y se adaptan bien a espacios verticales, aportando frescura y estilo a tu hogar.
+
 ¡Hola, amante de las plantas! Si estás pensando en armar un jardín vertical, seguramente te preguntás: ¿qué plantas usar en un jardín vertical? No te preocupes, que hoy te traigo toda la data necesaria para que tu espacio verde sea un verdadero espectáculo. ¡Y sin que se te mueran las plantas de la vergüenza!
 
 ## ¿Por qué un jardín vertical?

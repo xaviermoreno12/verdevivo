@@ -25,6 +25,8 @@ faqs:
 draft: false
 ---
 
+Un jardín vertical interior transforma tus paredes vacías en un oasis de frescura y bienestar. No solo decora, sino que también purifica el aire y mejora la calidad de vida, siendo ideal para espacios pequeños donde cada centímetro cuenta.
+
 # Transformá tu espacio con un jardín vertical interior
 
 ¿Te imaginas tener un pedacito de naturaleza en tu casa, mientras tus amigos se preguntan cómo lograste tal maravilla? ¡No, no es magia! Es un jardín vertical interior. Y si pensás que esto es solo para arquitectos o diseñadores, te cuento que no: ¡cualquiera puede hacerlo! Así que, preparate para ensuciarte las manos (aunque no demasiado) y darle vida a esas paredes vacías.

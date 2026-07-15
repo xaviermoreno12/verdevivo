@@ -27,6 +27,8 @@ faqs:
 draft: false
 ---
 
+Un jardín vertical con suculentas es una excelente opción para transformar tu espacio. Estas plantas son resistentes, requieren poco mantenimiento y ofrecen una variedad de formas y colores. Para crear tu jardín, elegí un lugar con luz indirecta y prepará un soporte como una rejilla o un marco resistente.
+
 # Crea un jardín vertical con suculentas y transforma tu espacio
 
 ¿Alguna vez pensaste en un jardín vertical con suculentas y te imaginaste un espacio verde que quita el aliento? Bueno, ¡estás en el lugar correcto! Hoy te cuento cómo darle vida a tus paredes y hacer que tus vecinos se mueran de envidia (en el buen sentido, claro). En este artículo, vamos a ver cómo crear tu propio jardín vertical, desde la elección de las suculentas hasta el mantenimiento. ¡Vamos a ello!
