@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITIO, url } from '../lib/sitio.ts';
+---
+<Layout
+  title="Política de privacidad"
+  description={`Cómo ${SITIO.nombre} maneja tus datos y tu privacidad.`}
+  canonicalPath="/privacidad"
+>
+  <article class="contenedor pagina" style="padding-top:2.5rem">
+    <h1>Política de privacidad</h1>
+    <p>En {SITIO.nombre} nos tomamos en serio tu privacidad. Acá te contamos, en simple, cómo funciona.</p>
+
+    <h2>Qué datos recopilamos</h2>
+    <p>
+      Este es un sitio de contenido: no te pedimos registro ni datos personales para leerlo. Podemos
+      usar herramientas de analítica (como Google Analytics) que recopilan información anónima y
+      agregada sobre las visitas —por ejemplo, qué páginas se leen más—, para mejorar el sitio.
+    </p>
+
+    <h2>Cookies</h2>
+    <p>
+      Podemos usar cookies propias y de terceros (como las de analítica) para entender el uso del
+      sitio. Podés bloquear las cookies desde la configuración de tu navegador cuando quieras.
+    </p>
+
+    <h2>Enlaces a terceros</h2>
+    <p>
+      Incluimos enlaces a sitios de terceros, incluidos enlaces de afiliado (ver
+      <a href={url('/aviso-afiliados')}>aviso de afiliados</a>). No somos responsables de las prácticas
+      de privacidad de esos sitios; te recomendamos leer sus propias políticas.
+    </p>
+
+    <h2>Tus derechos</h2>
+    <p>
+      Si tenés alguna duda sobre tus datos o querés ejercer tus derechos, escribinos desde la
+      <a href={url('/contacto')}>página de contacto</a> y te ayudamos.
+    </p>
+
+    <p class="muted">Esta política puede actualizarse. La última actualización refleja el estado actual del sitio.</p>
+  </article>
+</Layout>

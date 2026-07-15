@@ -5,6 +5,11 @@ export const SITIO = sitioConfig.sitio;
 export const MARCA = sitioConfig.marca;
 export const PRODUCTOS = sitioConfig.productos;
 
+// Autor del sitio (acepta objeto {nombre,rol,bio} o string legacy).
+export const AUTOR = (typeof (SITIO as any).autor === 'string'
+  ? { nombre: (SITIO as any).autor as string, rol: '', bio: '' }
+  : (SITIO as any).autor) as { nombre: string; rol?: string; bio?: string };
+
 export const PRODUCTO_DESTACADO =
   PRODUCTOS.find((p) => p.destacado) ?? PRODUCTOS[0];
 

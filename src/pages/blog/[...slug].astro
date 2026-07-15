@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import CTA from '../../components/CTA.astro';
 import { getCollection, render } from 'astro:content';
-import { SITIO, PRODUCTOS, PRODUCTO_DESTACADO, urlAbsoluta } from '../../lib/sitio.ts';
+import { SITIO, PRODUCTOS, PRODUCTO_DESTACADO, AUTOR, urlAbsoluta } from '../../lib/sitio.ts';
 
 export async function getStaticPaths() {
   // Solo genera los posts cuya fecha ya llegó (drip: 1 por día con rebuild diario)
@@ -24,7 +24,7 @@ const schema: Record<string, any>[] = [
     description: d.description,
     datePublished: d.pubDate.toISOString(),
     dateModified: (d.updatedDate ?? d.pubDate).toISOString(),
-    author: { '@type': 'Organization', name: SITIO.autor || SITIO.nombre },
+    author: { '@type': 'Person', name: AUTOR.nombre, description: AUTOR.bio },
     publisher: { '@type': 'Organization', name: SITIO.nombre },
     mainEntityOfPage: urlAbsoluta(`/blog/${post.id}`),
     ...(d.heroImage ? { image: d.heroImage } : {}),
@@ -50,6 +50,21 @@ if (d.faqs && d.faqs.length > 0) {
     })),
   });
 }
+if (d.pasos && d.pasos.length > 0) {
+  schema.push({
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: d.title,
+    description: d.description,
+    ...(d.heroImage ? { image: d.heroImage } : {}),
+    step: d.pasos.map((p, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: p.nombre,
+      text: p.texto,
+    })),
+  });
+}
 ---
 <Layout
   title={d.title}
@@ -72,6 +87,11 @@ if (d.faqs && d.faqs.length > 0) {
     </div>
 
     <CTA producto={producto} />
+
+    <div class="autor-box">
+      <p><strong>Escrito por {AUTOR.nombre}</strong>{AUTOR.rol ? ` · ${AUTOR.rol}` : ''}</p>
+      {AUTOR.bio && <p class="muted" style="margin:.3rem 0 0">{AUTOR.bio}</p>}
+    </div>
 
     {d.faqs && d.faqs.length > 0 && (
       <section class="faq mt-2">

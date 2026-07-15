@@ -76,6 +76,15 @@ const ga = SITIO.ga_id;
       'fuente-texto': `'${MARCA.fuente_texto}'`,
     }}></style>
 
+    <!-- Organización (marca) — ayuda a que Google y las IA reconozcan la entidad -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: SITIO.nombre,
+      url: urlAbsoluta('/'),
+      description: SITIO.descripcion,
+      slogan: SITIO.tagline,
+    })} />
     {schema && (
       <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     )}

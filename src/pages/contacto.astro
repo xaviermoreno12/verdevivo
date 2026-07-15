@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITIO } from '../lib/sitio.ts';
+const email = (SITIO as any).email || '';
+---
+<Layout
+  title="Contacto"
+  description={`Contactá con el equipo de ${SITIO.nombre}. Leemos todos los mensajes.`}
+  canonicalPath="/contacto"
+>
+  <article class="contenedor pagina" style="padding-top:2.5rem">
+    <h1>Contacto</h1>
+    <p>
+      ¿Tenés una duda, una sugerencia o querés proponernos un tema para una guía? Nos encanta que nos
+      escriban. Leemos todos los mensajes y respondemos lo antes que podemos.
+    </p>
+    {email && (
+      <p style="font-size:1.15rem"><strong>Escribinos a:</strong>
+        <a href={`mailto:${email}`}>{email}</a></p>
+    )}
+    <p class="muted">
+      Si nos escribís por un producto que recomendamos, tené en cuenta que somos un sitio de guías, no
+      la empresa que lo vende. Igual te orientamos con gusto.
+    </p>
+  </article>
+</Layout>

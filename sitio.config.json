@@ -8,9 +8,14 @@
     "idioma": "es",
     "pais": "AR",
     "descripcion": "Guías simples para armar tu jardín vertical y cultivar tu propia huerta orgánica en casa, aunque nunca hayas tenido una planta viva más de una semana.",
-    "autor": "Equipo VerdeVivo",
+    "autor": {
+      "nombre": "Diego Fontana",
+      "rol": "Horticultor y amante de las plantas",
+      "bio": "Armo huertas y jardines verticales en espacios chicos desde hace años. Acá cuento lo que realmente funciona, sin tecnicismos."
+    },
     "ga_id": "",
-    "gsc_verification": ""
+    "gsc_verification": "",
+    "email": "hola@verdevivo.com"
   },
   "marca": {
     "color_primario": "#15803d",

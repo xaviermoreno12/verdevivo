@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITIO, AUTOR, url } from '../lib/sitio.ts';
+---
+<Layout
+  title="Sobre nosotros"
+  description={`Quiénes somos en ${SITIO.nombre}, por qué escribimos sobre ${SITIO.nicho} y cómo elegimos lo que recomendamos.`}
+  canonicalPath="/sobre-nosotros"
+>
+  <article class="contenedor pagina" style="padding-top:2.5rem">
+    <h1>Sobre {SITIO.nombre}</h1>
+    <p>{SITIO.descripcion}</p>
+
+    <h2>Por qué existimos</h2>
+    <p>
+      {SITIO.nombre} nació de una idea simple: que aprender sobre {SITIO.nicho} no tendría que ser
+      aburrido ni estar lleno de humo. Hay demasiada información dando vueltas, mucha contradictoria y
+      mucha pensada para venderte algo. Nosotros armamos guías claras, al grano y honestas, para que
+      puedas dar el primer paso hoy mismo.
+    </p>
+
+    <h2>Cómo trabajamos</h2>
+    <p>
+      Cada guía se escribe pensando en una pregunta real que la gente se hace. Explicamos el paso a
+      paso, contamos los errores comunes y, cuando algo no es tan simple como lo pintan, lo decimos.
+      No prometemos milagros: preferimos que confíes en nosotros a largo plazo.
+    </p>
+
+    <h2>Sobre las recomendaciones</h2>
+    <p>
+      Cuando recomendamos un curso o producto, lo hacemos porque nos parece de valor para quien quiere
+      ir en serio. Algunos enlaces son de afiliado, lo que significa que podemos recibir una comisión
+      si comprás a través nuestro, sin que a vos te cueste más. Podés leer el detalle en nuestro
+      <a href={url('/aviso-afiliados')}>aviso de afiliados</a>.
+    </p>
+
+    <h2>Quién escribe</h2>
+    <p><strong>{AUTOR.nombre}</strong>{AUTOR.rol ? ` — ${AUTOR.rol}` : ''}. {AUTOR.bio}</p>
+
+    <p class="mt-2"><a href={url('/contacto')}>¿Querés contactarnos? Escribinos acá →</a></p>
+  </article>
+</Layout>

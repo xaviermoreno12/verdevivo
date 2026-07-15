@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITIO } from '../lib/sitio.ts';
+---
+<Layout
+  title="Aviso de afiliados"
+  description={`Cómo funcionan los enlaces de afiliado en ${SITIO.nombre} y nuestra transparencia con vos.`}
+  canonicalPath="/aviso-afiliados"
+>
+  <article class="contenedor pagina" style="padding-top:2.5rem">
+    <h1>Aviso de afiliados</h1>
+    <p>
+      En {SITIO.nombre} participamos en programas de afiliados, entre ellos el de Hotmart. Esto
+      significa que algunos de los enlaces a productos o cursos que mencionamos son enlaces de afiliado.
+    </p>
+    <h2>¿Qué implica para vos?</h2>
+    <p>
+      Si hacés clic en uno de esos enlaces y comprás, podemos recibir una comisión del vendedor. Para
+      vos <strong>no tiene ningún costo adicional</strong>: pagás exactamente lo mismo que pagarías
+      entrando directo. Esa comisión es lo que nos permite seguir escribiendo guías gratuitas.
+    </p>
+    <h2>Nuestro compromiso</h2>
+    <p>
+      Recomendamos productos porque creemos que aportan valor a quien quiere aprender en serio, no
+      solo porque paguen comisión. Nunca vamos a decirte que algo es bueno si no lo pensamos de verdad,
+      porque nuestra credibilidad vale más que una venta.
+    </p>
+    <p class="muted">
+      Las decisiones de compra son tuyas y bajo tu criterio. No garantizamos resultados: cada producto
+      es responsabilidad de quien lo vende.
+    </p>
+  </article>
+</Layout>

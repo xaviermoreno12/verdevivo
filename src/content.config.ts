@@ -15,6 +15,8 @@ const blog = defineCollection({
     heroImage: z.string().optional(),
     heroAlt: z.string().optional(),
     faqs: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
+    // Pasos de un tutorial "cómo…" → se emiten como schema HowTo (rich results + citable por IA)
+    pasos: z.array(z.object({ nombre: z.string(), texto: z.string() })).default([]),
     productoId: z.string().optional(),
     draft: z.boolean().default(false),
   }),
