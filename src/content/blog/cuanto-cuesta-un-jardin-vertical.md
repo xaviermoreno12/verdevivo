@@ -35,7 +35,7 @@ Pero no te preocupes, en este artículo vamos a desmenuzar los costos, los facto
 
 ## ¿Por qué elegir un jardín vertical?
 
-Antes de meternos de lleno en el tema de precios, vale la pena preguntarse: ¿por qué querrías tener un jardín vertical? En primer lugar, son una increíble solución para espacios reducidos. Si tu departamento es más pequeño que el sueño de tus vacaciones, un jardín vertical puede darte ese toque verde que tanto necesitás. Además, son perfectos para mejorar la calidad del aire y aportar un poco de frescura a tu hogar. Y si tenés un balcón, imaginate transformarlo con un [jardín vertical espectacular](/verdevivo/blog/jardin-vertical-para-balcon/) que llame la atención de los vecinos.
+Antes de meternos de lleno en el tema de precios, vale la pena preguntarse: ¿por qué querrías tener un jardín vertical? En primer lugar, son una increíble solución para espacios reducidos. Si tu departamento es más pequeño que el sueño de tus vacaciones, un jardín vertical puede darte ese toque verde que tanto necesitás. Además, son perfectos para mejorar la calidad del aire y aportar un poco de frescura a tu hogar. Y si tenés un balcón, imaginate transformarlo con un [jardín vertical espectacular](/blog/jardin-vertical-para-balcon/) que llame la atención de los vecinos.
 
 ## Factores que influyen en el costo de un jardín vertical
 
@@ -59,7 +59,7 @@ En promedio, podés esperar gastar entre **$25.000 y $70.000 por m²** si contra
 
 ## Ideas para tu jardín vertical
 
-Si ya estás convencido de que querés un jardín vertical pero no sabés por dónde empezar, ¡no desesperes! Hay un montón de ideas que podés implementar. Desde un [jardín vertical interior](/verdevivo/blog/jardin-vertical-interior/) que dará vida a tu living, hasta un [jardín vertical con suculentas](/verdevivo/blog/jardin-vertical-suculentas/) que es muy fácil de mantener. 
+Si ya estás convencido de que querés un jardín vertical pero no sabés por dónde empezar, ¡no desesperes! Hay un montón de ideas que podés implementar. Desde un [jardín vertical interior](/blog/jardin-vertical-interior/) que dará vida a tu living, hasta un [jardín vertical con suculentas](/blog/jardin-vertical-suculentas/) que es muy fácil de mantener. 
 
 Además, si te gusta el diseño, podés pensar en crear un jardín vertical que no solo sea funcional, sino también estéticamente atractivo. Agregar cuadros vivos puede ser una excelente opción para darle un toque único a tu espacio.
 
@@ -76,7 +76,7 @@ El costo promedio puede oscilar entre $50.000 y $140.000, dependiendo de los fac
 Sí, podés optar por plantas más económicas y hacer la estructura vos mismo para ahorrar en costos.
 
 ### 3. ¿Qué plantas son las más recomendadas para un jardín vertical?
-Las más comunes son las suculentas, helechos y plantas de interior como la pothos. [Descubrilo aquí](/verdevivo/blog/plantas-jardin-vertical/).
+Las más comunes son las suculentas, helechos y plantas de interior como la pothos. [Descubrilo aquí](/blog/plantas-jardin-vertical/).
 
 ### 4. ¿El mantenimiento de un jardín vertical es complicado?
 No necesariamente, pero sí requiere tiempo y dedicación. Es fundamental regar y fertilizar adecuadamente.
