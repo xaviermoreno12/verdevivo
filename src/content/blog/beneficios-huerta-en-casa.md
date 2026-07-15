@@ -9,8 +9,8 @@ cluster:
   - "beneficios de la agricultura urbana"
   - "por qué tener una huerta"
 productoId: "alimentos-organicos"
-heroImage: ""
-heroAlt: ""
+heroImage: "https://images.pexels.com/photos/36697445/pexels-photo-36697445.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+heroAlt: "Smiling woman chopping vegetables in a cozy kitchen setting."
 faqs: []
 draft: false
 ---

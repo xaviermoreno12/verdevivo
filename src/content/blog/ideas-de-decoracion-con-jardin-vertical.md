@@ -9,8 +9,8 @@ cluster:
   - "jardín vertical interior"
   - "huertas verticales"
 productoId: "jardin-vertical"
-heroImage: "https://images.pexels.com/photos/18343271/pexels-photo-18343271.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-heroAlt: "Charming wall with pots of plants adding a rustic touch in Kraków, Poland."
+heroImage: "https://images.pexels.com/photos/35734766/pexels-photo-35734766.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+heroAlt: "Inviting urban café entrance with exotic plants, cozy decor, and welcoming atmosphere."
 faqs:
   - q: "¿Qué tipo de plantas son mejores para un jardín vertical?"
     a: "Las plantas que mejor se adaptan son las que requieren poca luz y tienen un crecimiento vertical, como el pothos, las suculentas o el helecho."

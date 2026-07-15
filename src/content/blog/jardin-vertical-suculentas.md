@@ -9,8 +9,8 @@ cluster:
   - "jardín vertical fácil"
   - "suculentas en jardín vertical"
 productoId: "jardin-vertical"
-heroImage: "https://images.pexels.com/photos/37046031/pexels-photo-37046031.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-heroAlt: "A vibrant vertical garden with potted succulents and lush greenery in natural sunlight creating a serene atmosphere."
+heroImage: "https://images.pexels.com/photos/26178998/pexels-photo-26178998.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+heroAlt: "Colorful urban rooftop garden with various potted plants and flowers in Ho Chi Minh City."
 faqs:
   - q: "¿Cuáles son las suculentas más resistentes para un jardín vertical?"
     a: "Las suculentas como la Echeveria, Aloe Vera y Sedum son excelentes opciones por su resistencia y bajo requerimiento de agua."

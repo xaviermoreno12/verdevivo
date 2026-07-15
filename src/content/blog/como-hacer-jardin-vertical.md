@@ -9,8 +9,8 @@ cluster:
   - "cuadros vivos con plantas"
   - "jardinería vertical"
 productoId: "jardin-vertical"
-heroImage: "https://images.pexels.com/photos/18343271/pexels-photo-18343271.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-heroAlt: "Charming wall with pots of plants adding a rustic touch in Kraków, Poland."
+heroImage: "https://images.pexels.com/photos/11384985/pexels-photo-11384985.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+heroAlt: "A rustic doorway adorned with lush potted plants and greens, creating a charming garden vibe."
 faqs:
   - q: "¿Qué tipo de plantas son las mejores para un jardín vertical?"
     a: "Las mejores plantas son aquellas que se adaptan a la luz y humedad de tu espacio. Plantas como helechos, suculentas y hierbas aromáticas suelen ser buenas opciones."

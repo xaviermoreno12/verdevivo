@@ -9,8 +9,8 @@ cluster:
   - "jardines verticales sostenibles"
   - "huertas verticales sin esfuerzo"
 productoId: "jardin-vertical"
-heroImage: "https://images.pexels.com/photos/18343271/pexels-photo-18343271.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-heroAlt: "Charming wall with pots of plants adding a rustic touch in Kraków, Poland."
+heroImage: "https://images.pexels.com/photos/11872051/pexels-photo-11872051.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+heroAlt: "Rustic café setting with outdoor seating, umbrellas, and vintage charm in a historic city."
 faqs:
   - q: "¿Es posible tener un jardín vertical sin mantenimiento?"
     a: "Sí, con las plantas adecuadas y un buen sistema de riego, podés disfrutar de un jardín vertical que no requiera mucho esfuerzo."

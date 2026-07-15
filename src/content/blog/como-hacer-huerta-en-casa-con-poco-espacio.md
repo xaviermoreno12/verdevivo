@@ -9,8 +9,8 @@ cluster:
   - "huerta urbana en casa"
   - "jardín vertical para cultivar"
 productoId: "alimentos-organicos"
-heroImage: "https://images.pexels.com/photos/27176054/pexels-photo-27176054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-heroAlt: "A gardener wearing gloves tending to lettuce plants in an outdoor garden bed."
+heroImage: "https://images.pexels.com/photos/7728082/pexels-photo-7728082.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+heroAlt: "Crop unrecognizable gardener in gloves and jeans planting green plants into fertile soil while working in garden on summer day"
 faqs:
   - q: "¿Cuánto tiempo tardan en crecer las plantas?"
     a: "Depende del tipo de planta, pero la mayoría de las lechugas pueden estar listas en unas 4 a 6 semanas."

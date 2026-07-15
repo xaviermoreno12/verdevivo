@@ -9,8 +9,8 @@ cluster:
   - "jardín vertical low cost"
   - "jardín vertical accesible"
 productoId: "jardin-vertical"
-heroImage: "https://images.pexels.com/photos/18343271/pexels-photo-18343271.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-heroAlt: "Charming wall with pots of plants adding a rustic touch in Kraków, Poland."
+heroImage: "https://images.pexels.com/photos/29900812/pexels-photo-29900812.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+heroAlt: "A rustic brick wall with a window decorated by flower pots, showcasing urban decay and vintage charm."
 faqs:
   - q: "¿Qué tipo de plantas son las mejores para un jardín vertical?"
     a: "Las suculentas, helechos y plantas de interior son ideales por su bajo mantenimiento y adaptabilidad."

@@ -1,10 +1,13 @@
 ---
 // Bloque de reseña de un producto (para la homepage). Un sitio puede tener varios.
+import ElegirDestino from './ElegirDestino.astro';
+
 interface Props {
   producto: {
     nombre: string;
     precio: string;
     hotlink: string;
+    pagina_ventas?: string;
     rating?: number;
     descripcion_corta: string;
     beneficios?: string[];
@@ -27,7 +30,5 @@ const estrellas = producto.rating ? '★'.repeat(Math.round(producto.rating)) + 
   )}
   {producto.para_quien && <p class="muted"><strong>Ideal para:</strong> {producto.para_quien}</p>}
   <p class="precio">{producto.precio}</p>
-  <a class="btn" href={producto.hotlink} target="_blank" rel="sponsored nofollow noopener">
-    Ver oferta oficial →
-  </a>
+  <ElegirDestino producto={producto} texto="Ver oferta oficial →" />
 </article>

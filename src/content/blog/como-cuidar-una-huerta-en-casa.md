@@ -9,8 +9,8 @@ cluster:
   - "cultivo en casa"
   - "huerta casera"
 productoId: "alimentos-organicos"
-heroImage: "https://images.pexels.com/photos/27176054/pexels-photo-27176054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-heroAlt: "A gardener wearing gloves tending to lettuce plants in an outdoor garden bed."
+heroImage: "https://images.pexels.com/photos/27176066/pexels-photo-27176066.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+heroAlt: "A woman tending to her organic vegetable garden, promoting sustainable agriculture."
 faqs:
   - q: "¿Cuánto tiempo lleva cuidar una huerta?"
     a: "Depende del tipo de planta, pero generalmente requiere de 15 a 30 minutos al día."

@@ -9,8 +9,8 @@ cluster:
   - "cultivo urbano"
   - "huerta orgánica en casa"
 productoId: "alimentos-organicos"
-heroImage: ""
-heroAlt: ""
+heroImage: "https://images.pexels.com/photos/16682438/pexels-photo-16682438.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+heroAlt: "A vibrant herb garden featuring wooden signs for various herbs like oregano and mint in rustic planters."
 faqs: []
 draft: false
 ---

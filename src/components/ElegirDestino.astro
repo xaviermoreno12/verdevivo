@@ -1,0 +1,52 @@
+---
+// Botón de afiliado que abre un cartel con 2 destinos en vez de mandar directo al checkout.
+// Usa <dialog> nativo (0 KB de framework): no se sale de la página hasta elegir.
+// Ambos links llevan el ?ap=/?ref= del hotlink, así la comisión se mantiene en las dos opciones.
+interface Props {
+  producto: { nombre: string; hotlink: string; pagina_ventas?: string };
+  texto?: string;
+  clase?: string;
+}
+const { producto, texto, clase = 'btn' } = Astro.props;
+const etiqueta = texto ?? `Ver ${producto.nombre} →`;
+// Sin página de ventas cargada, el botón se comporta como antes: link directo.
+const id = `dlg-${Math.random().toString(36).slice(2, 9)}`;
+---
+{producto.pagina_ventas ? (
+  <>
+    <button type="button" class={clase} data-abre={id}>{etiqueta}</button>
+
+    <dialog id={id} class="elegir-dlg" aria-labelledby={`${id}-t`}>
+      <h3 id={`${id}-t`}>¿Cómo querés continuar?</h3>
+      <p class="muted">Elegí una opción para {producto.nombre}.</p>
+
+      <a class="btn" href={producto.hotlink} target="_blank" rel="sponsored nofollow noopener">
+        Ir al checkout y comprar
+      </a>
+      <a class="btn btn-acento" href={producto.pagina_ventas} target="_blank" rel="sponsored nofollow noopener">
+        Ver la página de ventas
+      </a>
+
+      <button type="button" class="elegir-cerrar" data-cierra={id}>Cancelar</button>
+    </dialog>
+  </>
+) : (
+  <a class={clase} href={producto.hotlink} target="_blank" rel="sponsored nofollow noopener">
+    {etiqueta}
+  </a>
+)}
+
+<script>
+  // Delegación: sirve para todos los CTA de la página, sin importar cuántos haya.
+  document.addEventListener('click', (e) => {
+    const t = e.target as HTMLElement;
+    const abre = t.closest<HTMLElement>('[data-abre]')?.dataset.abre;
+    if (abre) (document.getElementById(abre) as HTMLDialogElement)?.showModal();
+
+    const cierra = t.closest<HTMLElement>('[data-cierra]')?.dataset.cierra;
+    if (cierra) (document.getElementById(cierra) as HTMLDialogElement)?.close();
+
+    // Click en el backdrop (fuera del contenido) cierra el cartel.
+    if (t instanceof HTMLDialogElement && t.classList.contains('elegir-dlg')) t.close();
+  });
+</script>

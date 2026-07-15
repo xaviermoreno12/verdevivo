@@ -9,8 +9,8 @@ cluster:
   - "jardín vertical en casa"
   - "huertas verticales"
 productoId: "jardin-vertical"
-heroImage: "https://images.pexels.com/photos/18343271/pexels-photo-18343271.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-heroAlt: "Charming wall with pots of plants adding a rustic touch in Kraków, Poland."
+heroImage: "https://images.pexels.com/photos/35834705/pexels-photo-35834705.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+heroAlt: "A quaint urban scene featuring an aged building facade with a bicycle parked nearby, ideal for retro aesthetics."
 faqs:
   - q: "¿Qué tipos de plantas son ideales para un jardín vertical?"
     a: "Las mejores opciones son plantas de bajo mantenimiento, como suculentas, pothos, y hierbas aromáticas como albahaca y romero."

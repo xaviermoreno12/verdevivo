@@ -136,6 +136,22 @@ img { max-width: 100%; height: auto; border-radius: var(--radio); display: block
 .footer-links { display: flex; flex-wrap: wrap; gap: 1.2rem; margin-bottom: 1.3rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(255,255,255,.12); }
 .footer-links a { font-weight: 600; font-size: .92rem; }
 
+/* ---- Cartel de 2 opciones (<dialog> nativo, sin framework) ---- */
+.elegir-dlg {
+  border: none; border-radius: var(--radio); padding: 1.8rem 1.6rem;
+  max-width: 26rem; width: calc(100% - 2rem); box-shadow: 0 20px 60px rgba(15,23,42,.25);
+  color: var(--gris-texto);
+}
+.elegir-dlg::backdrop { background: rgba(15, 23, 42, .55); backdrop-filter: blur(2px); }
+.elegir-dlg h3 { margin-top: 0; }
+.elegir-dlg .btn { display: flex; justify-content: center; width: 100%; margin-top: .8rem; }
+.elegir-cerrar {
+  display: block; margin: 1.1rem auto 0; background: none; border: none;
+  color: var(--gris-suave); font-size: .92rem; cursor: pointer; text-decoration: underline;
+  font-family: inherit;
+}
+.elegir-cerrar:hover { color: var(--secundario); }
+
 /* ---- Firma del autor (E-E-A-T) ---- */
 .autor-box { background: var(--gris-fondo); border-left: 4px solid var(--primario);
   border-radius: var(--radio); padding: 1rem 1.2rem; margin: 2rem 0; font-size: .95rem; }

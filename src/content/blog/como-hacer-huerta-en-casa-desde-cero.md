@@ -9,8 +9,8 @@ cluster:
   - "crear huerta orgánica"
   - "cómo sembrar en casa"
 productoId: "alimentos-organicos"
-heroImage: "https://images.pexels.com/photos/27176054/pexels-photo-27176054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-heroAlt: "A gardener wearing gloves tending to lettuce plants in an outdoor garden bed."
+heroImage: "https://images.pexels.com/photos/7728911/pexels-photo-7728911.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+heroAlt: "A person is skillfully planting lettuce seedlings outdoors in a home garden."
 faqs:
   - q: "¿Cuánto tiempo lleva cultivar una huerta en casa?"
     a: "El tiempo puede variar según el tipo de vegetales, pero generalmente, podés comenzar a cosechar en 2 a 3 meses."
