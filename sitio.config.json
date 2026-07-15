@@ -2,8 +2,8 @@
   "sitio": {
     "nombre": "VerdeVivo",
     "tagline": "Jardines verticales y huertas en casa, sin secretos",
-    "dominio": "https://xaviermoreno12.github.io",
-    "base": "/verdevivo",
+    "dominio": "https://verdevivo.vercel.app",
+    "base": "/",
     "nicho": "jardín vertical y huerta en casa",
     "idioma": "es",
     "pais": "AR",
