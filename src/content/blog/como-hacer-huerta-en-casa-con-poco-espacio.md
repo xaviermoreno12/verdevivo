@@ -55,7 +55,7 @@ Si querés más ideas, te recomiendo leer [Cómo armar una huerta en casa: ¡Cul
 
 ## Macetas verticales: ¡el espacio es la clave!
 
-Si el espacio es limitado, una solución brillante son las macetas verticales. Podés colgarlas en la pared o usar estanterías. Esto no solo ahorra espacio, sino que también le da un toque decorativo a tu hogar. ¿Por qué no hacer un jardín vertical? Para eso, te recomiendo leer [Cómo colgar un jardín vertical: ¡Transformá tu espacio!](/blog/como-colgar-jardin-vertical/).
+Si el espacio es limitado, una solución brillante son las macetas verticales. Podés colgarlas en la pared o usar estanterías. Esto no solo ahorra espacio, sino que también le da un toque decorativo a tu hogar. ¿Por qué no hacer un jardín vertical? Para eso, te recomiendo leer Cómo colgar un jardín vertical: ¡Transformá tu espacio!.
 
 ## Cuidado y mantenimiento
 

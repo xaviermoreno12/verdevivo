@@ -47,7 +47,7 @@ Ahora que ya sabés por qué elegir suculentas, sigamos con el proceso de creaci
 
 ### 1. Elegí el lugar adecuado
 
-Primero, necesitás elegir la pared o el espacio donde vas a colocar tu jardín vertical. Buscá un lugar que reciba luz indirecta, ya que las suculentas prefieren este tipo de iluminación. ¿Tenés un balcón? ¡Perfecto! [Transformá tu balcón con un jardín vertical espectacular](/blog/jardin-vertical-para-balcon/) es una gran opción.
+Primero, necesitás elegir la pared o el espacio donde vas a colocar tu jardín vertical. Buscá un lugar que reciba luz indirecta, ya que las suculentas prefieren este tipo de iluminación. ¿Tenés un balcón? ¡Perfecto! Transformá tu balcón con un jardín vertical espectacular es una gran opción.
 
 ### 2. Prepara el soporte
 

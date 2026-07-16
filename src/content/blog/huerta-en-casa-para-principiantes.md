@@ -62,7 +62,7 @@ Si el espacio es un problema, no te preocupes. Podés optar por un jardín verti
 ### ¿Cómo colgar un jardín vertical?
 - **Elegí el contenedor adecuado**: Podés usar palets, macetas o módulos específicos para jardines verticales.
 - **Seleccioná las plantas**: Algunas que crecen bien en vertical son las hierbas aromáticas y algunas variedades de lechugas.  
-- **Instalá y cuidá**: Asegurate de que tenga un buen sistema de drenaje y no olvides regar adecuadamente. Para más detalles, consultá [cómo colgar un jardín vertical: ¡Transformá tu espacio!](/blog/como-colgar-jardin-vertical/).
+- **Instalá y cuidá**: Asegurate de que tenga un buen sistema de drenaje y no olvides regar adecuadamente. Para más detalles, consultá cómo colgar un jardín vertical: ¡Transformá tu espacio!.
 
 ## Errores comunes al iniciar una huerta en casa
 

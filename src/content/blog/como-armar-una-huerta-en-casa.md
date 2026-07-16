@@ -46,7 +46,7 @@ Antes de que te emociones y salgas corriendo a comprar semillas, hagamos un poco
 
 Ahora sí, ¡manos a la obra! Aquí te dejo un paso a paso para que no te olvides de nada:
 
-1. **Elegí el espacio**: Buscá un lugar donde le dé el sol al menos 6 horas al día. Puede ser un patio trasero, un balcón o incluso un jardín vertical. Si querés saber más sobre jardines verticales, no te olvides de leer [Cómo colgar un jardín vertical: ¡Transformá tu espacio!](/blog/como-colgar-jardin-vertical/).
+1. **Elegí el espacio**: Buscá un lugar donde le dé el sol al menos 6 horas al día. Puede ser un patio trasero, un balcón o incluso un jardín vertical. Si querés saber más sobre jardines verticales, no te olvides de leer Cómo colgar un jardín vertical: ¡Transformá tu espacio!.
 
 2. **Prepará el terreno**: Quitá las piedras, malezas y todo lo que esté de más. Si tenés una tierra dura, tal vez quieras aflojarla con una pala. Un buen suelo es clave.
 

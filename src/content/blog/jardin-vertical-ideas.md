@@ -47,15 +47,15 @@ La cocina es uno de los espacios más importantes de la casa. ¿Y qué mejor que
 
 ### 2. Jardín Vertical en el Balcón
 
-Si tenés un balcón, ¡es tu oportunidad! Un jardín vertical puede transformar ese pequeño espacio en un oasis. Podés usar macetas colgantes o paneles modulares. Las plantas de flores, como las petunias o las violetas, van a darle un toque de color impresionante. Para más ideas, mirá nuestro artículo sobre [Transformá tu balcón con un jardín vertical espectacular](/blog/jardin-vertical-para-balcon/).
+Si tenés un balcón, ¡es tu oportunidad! Un jardín vertical puede transformar ese pequeño espacio en un oasis. Podés usar macetas colgantes o paneles modulares. Las plantas de flores, como las petunias o las violetas, van a darle un toque de color impresionante. Para más ideas, mirá nuestro artículo sobre Transformá tu balcón con un jardín vertical espectacular.
 
 ### 3. Jardín Vertical Interior
 
-Los jardines verticales interiores son perfectos para dar vida a cualquier habitación. Usá plantas de interior como pothos o sansevieria, que son resistentes y de bajo mantenimiento. Las paredes verdes aportan frescura y se ven increíbles en cualquier espacio. Si querés más inspiración, podés leer sobre [Transformá tu espacio con un jardín vertical interior](/blog/jardin-vertical-interior/).
+Los jardines verticales interiores son perfectos para dar vida a cualquier habitación. Usá plantas de interior como pothos o sansevieria, que son resistentes y de bajo mantenimiento. Las paredes verdes aportan frescura y se ven increíbles en cualquier espacio. Si querés más inspiración, podés leer sobre Transformá tu espacio con un jardín vertical interior.
 
 ### 4. Jardín Vertical con Suculentas
 
-Las suculentas son ideales para los principiantes, ya que requieren poco cuidado. Usá una estructura de madera o metal y coloca las suculentas en un diseño que te guste. ¡El resultado será un verdadero espectáculo! Para más detalles, revisá nuestro post sobre [Crea un jardín vertical con suculentas y transforma tu espacio](/blog/jardin-vertical-suculentas/).
+Las suculentas son ideales para los principiantes, ya que requieren poco cuidado. Usá una estructura de madera o metal y coloca las suculentas en un diseño que te guste. ¡El resultado será un verdadero espectáculo! Para más detalles, revisá nuestro post sobre Crea un jardín vertical con suculentas y transforma tu espacio.
 
 ## Mantenimiento de tu jardín vertical
 

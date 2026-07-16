@@ -109,5 +109,39 @@ const ga = SITIO.ga_id;
       <slot />
     </main>
     <Footer />
+    <script>
+      // Tracking de clicks para GA4. No hace nada si GA no está cargado (ga_id vacío) → no rompe.
+      document.addEventListener('click', (e) => {
+        const g = (window as any).gtag;
+        if (typeof g !== 'function') return;
+        const el = (e.target as HTMLElement).closest('a, button') as HTMLElement | null;
+        if (!el) return;
+        const destino = (el as HTMLAnchorElement).href || '';
+
+        // Clicks de afiliado nombrados (data-evento en los links del modal / CTA directo).
+        const evento = el.getAttribute('data-evento');
+        if (evento) {
+          g('event', evento === 'checkout' ? 'cta_checkout' : 'cta_pagina_ventas', {
+            producto: el.getAttribute('data-producto') || '',
+            destino,
+          });
+          return;
+        }
+
+        // Cualquier otro click en un link o botón: sección + texto + destino.
+        let seccion = 'contenido';
+        if (el.closest('.site-header')) seccion = 'nav';
+        else if (el.closest('.filtros')) seccion = 'blog-filtro';
+        else if (el.closest('.site-footer')) seccion = 'footer';
+        else if (el.closest('.card')) seccion = 'post-card';
+        else if (el.closest('.elegir-dlg') || el.matches('.btn, .btn-acento')) seccion = 'cta';
+
+        g('event', 'click_ui', {
+          seccion,
+          etiqueta: (el.textContent || '').trim().slice(0, 60),
+          destino,
+        });
+      });
+    </script>
   </body>
 </html>

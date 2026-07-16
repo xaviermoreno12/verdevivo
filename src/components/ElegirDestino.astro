@@ -20,10 +20,12 @@ const id = `dlg-${Math.random().toString(36).slice(2, 9)}`;
       <h3 id={`${id}-t`}>¿Cómo querés continuar?</h3>
       <p class="muted">Elegí una opción para {producto.nombre}.</p>
 
-      <a class="btn" href={producto.hotlink} target="_blank" rel="sponsored nofollow noopener">
+      <a class="btn" href={producto.hotlink} target="_blank" rel="sponsored nofollow noopener"
+         data-evento="checkout" data-producto={producto.nombre}>
         Ir al checkout y comprar
       </a>
-      <a class="btn btn-acento" href={producto.pagina_ventas} target="_blank" rel="sponsored nofollow noopener">
+      <a class="btn btn-acento" href={producto.pagina_ventas} target="_blank" rel="sponsored nofollow noopener"
+         data-evento="pagina_ventas" data-producto={producto.nombre}>
         Ver la página de ventas
       </a>
 
@@ -31,7 +33,8 @@ const id = `dlg-${Math.random().toString(36).slice(2, 9)}`;
     </dialog>
   </>
 ) : (
-  <a class={clase} href={producto.hotlink} target="_blank" rel="sponsored nofollow noopener">
+  <a class={clase} href={producto.hotlink} target="_blank" rel="sponsored nofollow noopener"
+     data-evento="checkout" data-producto={producto.nombre}>
     {etiqueta}
   </a>
 )}
