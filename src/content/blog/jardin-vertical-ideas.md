@@ -1,7 +1,7 @@
 ---
 title: "Jardín vertical ideas para transformar tu espacio"
 description: "Descubrí las mejores jardín vertical ideas y hacé de tu hogar un espacio verde y fresco."
-pubDate: 2026-07-14
+pubDate: 2026-07-07
 keyword: "jardin vertical ideas"
 cluster:
   - "jardín vertical decorativo"

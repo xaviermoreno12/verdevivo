@@ -1,7 +1,7 @@
 ---
 title: "Crea un jardín vertical con suculentas y transforma tu espacio"
 description: "Aprendé a hacer un jardín vertical con suculentas y dale vida a tu hogar con este paso a paso."
-pubDate: 2026-07-14
+pubDate: 2026-07-08
 keyword: "jardin vertical con suculentas"
 cluster:
   - "jardín vertical suculentas"

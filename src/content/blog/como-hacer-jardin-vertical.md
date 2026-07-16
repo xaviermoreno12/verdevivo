@@ -1,7 +1,7 @@
 ---
 title: "Cómo hacer jardín vertical: ¡Transformá tu espacio verde!"
 description: "Descubrí cómo hacer jardín vertical en casa y llená tus paredes de vida. Tips prácticos y fáciles."
-pubDate: 2026-07-14
+pubDate: 2026-07-09
 keyword: "como hacer jardin vertical"
 cluster:
   - "jardín vertical en casa"

@@ -1,7 +1,7 @@
 ---
 title: "Transformá tu espacio con un jardín vertical interior"
 description: "Descubrí cómo crear un jardín vertical interior y transformá tu hogar en un oasis verde."
-pubDate: 2026-07-14
+pubDate: 2026-07-10
 keyword: "jardin vertical interior"
 cluster:
   - "jardín vertical en casa"

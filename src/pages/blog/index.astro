@@ -1,11 +1,17 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import PostCard from '../../components/PostCard.astro';
-import { SITIO, urlAbsoluta } from '../../lib/sitio.ts';
+import { SITIO, PRODUCTOS, urlAbsoluta } from '../../lib/sitio.ts';
 import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('blog', ({ data }) => !data.draft && data.pubDate.valueOf() <= Date.now()))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Sólo mostramos filtros de temáticas que tengan al menos 1 post visible (evita botones vacíos).
+const presentes = new Set(posts.map((p) => p.data.productoId).filter(Boolean));
+const categorias = (PRODUCTOS || [])
+  .filter((p: any) => p.tema && presentes.has(p.id))
+  .map((p: any) => ({ id: p.id, tema: p.tema }));
 
 const schema = {
   '@context': 'https://schema.org',
@@ -24,12 +30,64 @@ const schema = {
   <section class="contenedor-ancho" style="padding-top:3rem">
     <h1>Blog</h1>
     <p class="sub muted">Guías honestas sobre {SITIO.nicho}. {posts.length} artículos y sumando.</p>
+
+    {categorias.length > 1 && (
+      <div class="filtros" aria-label="Filtrar por temática">
+        <button type="button" class="filtro-btn activo" data-filtro="todos">Todos</button>
+        {categorias.map((c) => (
+          <button type="button" class="filtro-btn" data-filtro={c.id}>{c.tema}</button>
+        ))}
+      </div>
+    )}
+
     {posts.length === 0 ? (
       <p class="muted mt-2">Todavía no hay artículos publicados. Volvé pronto 👀</p>
     ) : (
-      <div class="grid grid-3 mt-2">
+      <div class="grid grid-3 mt-2" id="lista-posts">
         {posts.map((post) => <PostCard post={post} />)}
       </div>
     )}
+    <p class="muted mt-2" id="sin-resultados" style="display:none">
+      Todavía no hay artículos en esta temática. ¡Se suman uno por día!
+    </p>
   </section>
+
+  <style>
+    .filtros { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.5rem 0 .25rem; }
+    .filtro-btn {
+      border: 1px solid var(--gris-borde); background: #fff; color: var(--gris-texto);
+      padding: .45rem .95rem; border-radius: 999px; font-size: .9rem; font-weight: 600;
+      cursor: pointer; transition: background .15s, color .15s, border-color .15s;
+    }
+    .filtro-btn:hover { border-color: var(--primario); color: var(--primario); }
+    .filtro-btn.activo { background: var(--primario); border-color: var(--primario); color: #fff; }
+  </style>
+
+  <script>
+    const botones = Array.from(document.querySelectorAll('.filtro-btn'));
+    const cards = Array.from(document.querySelectorAll('#lista-posts [data-cat]'));
+    const vacio = document.getElementById('sin-resultados');
+
+    function aplicar(cat) {
+      let visibles = 0;
+      botones.forEach((b) => b.classList.toggle('activo', b.dataset.filtro === cat));
+      cards.forEach((c) => {
+        const ok = cat === 'todos' || c.dataset.cat === cat;
+        c.style.display = ok ? '' : 'none';
+        if (ok) visibles++;
+      });
+      if (vacio) vacio.style.display = visibles === 0 ? '' : 'none';
+    }
+
+    botones.forEach((b) => b.addEventListener('click', () => {
+      const cat = b.dataset.filtro;
+      const u = new URL(location.href);
+      if (cat === 'todos') u.searchParams.delete('cat'); else u.searchParams.set('cat', cat);
+      history.replaceState(null, '', u);
+      aplicar(cat);
+    }));
+
+    const pedido = new URLSearchParams(location.search).get('cat');
+    aplicar(pedido && botones.some((b) => b.dataset.filtro === pedido) ? pedido : 'todos');
+  </script>
 </Layout>

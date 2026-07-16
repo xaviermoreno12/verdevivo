@@ -1,7 +1,7 @@
 ---
 title: "Transformá tu balcón con un jardín vertical espectacular"
 description: "Aprendé cómo crear un jardín vertical para balcón y llená tu espacio de vida y color."
-pubDate: 2026-07-14
+pubDate: 2026-07-12
 keyword: "jardin vertical para balcon"
 cluster:
   - "jardín vertical en casa"

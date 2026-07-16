@@ -1,7 +1,7 @@
 ---
 title: "¿Cuánto cuesta un jardín vertical? Descubrilo ya"
 description: "¿Te preguntás cuánto cuesta un jardín vertical? Conocé los precios, beneficios y cómo crear el tuyo."
-pubDate: 2026-07-15
+pubDate: 2026-07-13
 keyword: "cuanto cuesta un jardin vertical"
 cluster:
   - "precio jardín vertical"

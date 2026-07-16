@@ -1,5 +1,10 @@
 ---
-import { SITIO, url } from '../lib/sitio.ts';
+import { SITIO, PRODUCTOS, url } from '../lib/sitio.ts';
+
+// Temáticas del sitio (una por producto que tenga `tema`) → menú + filtro del blog.
+const categorias = (PRODUCTOS || [])
+  .filter((p: any) => p.tema)
+  .map((p: any) => ({ id: p.id, tema: p.tema }));
 ---
 <header class="site-header">
   <div class="contenedor-ancho">
@@ -7,6 +12,7 @@ import { SITIO, url } from '../lib/sitio.ts';
     <nav class="nav">
       <a href={url('/')}>Inicio</a>
       <a href={url('/blog')}>Blog</a>
+      {categorias.map((c) => <a href={url(`/blog?cat=${c.id}`)}>{c.tema}</a>)}
       <a href={url('/sobre-nosotros')}>Nosotros</a>
     </nav>
   </div>

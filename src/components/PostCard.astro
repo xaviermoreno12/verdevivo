@@ -4,14 +4,14 @@ import { url } from '../lib/sitio.ts';
 interface Props {
   post: {
     id: string;
-    data: { title: string; description: string; pubDate: Date; heroImage?: string; heroAlt?: string };
+    data: { title: string; description: string; pubDate: Date; heroImage?: string; heroAlt?: string; productoId?: string };
   };
 }
 const { post } = Astro.props;
 const fecha = post.data.pubDate.toLocaleDateString('es-AR', { day: 'numeric', month: 'long', year: 'numeric' });
 const href = url(`/blog/${post.id}`);
 ---
-<article class="card">
+<article class="card" data-cat={post.data.productoId}>
   {post.data.heroImage && (
     <a href={href}><img src={post.data.heroImage} alt={post.data.heroAlt ?? post.data.title} loading="lazy" width="400" height="225" style="border-radius:0;aspect-ratio:16/9;object-fit:cover" /></a>
   )}

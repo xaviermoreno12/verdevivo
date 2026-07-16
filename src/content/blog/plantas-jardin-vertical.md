@@ -1,7 +1,7 @@
 ---
 title: "¿Qué plantas usar en un jardín vertical? ¡Descubrilo ya!"
 description: "Descubrí qué plantas usar en un jardín vertical para transformar tu espacio. Consejos prácticos y creativos."
-pubDate: 2026-07-14
+pubDate: 2026-07-11
 keyword: "que plantas usar en un jardin vertical"
 cluster:
   - "plantas para jardín vertical"
