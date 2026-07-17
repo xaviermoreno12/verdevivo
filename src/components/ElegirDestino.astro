@@ -3,7 +3,7 @@
 // Usa <dialog> nativo (0 KB de framework): no se sale de la página hasta elegir.
 // Ambos links llevan el ?ap=/?ref= del hotlink, así la comisión se mantiene en las dos opciones.
 interface Props {
-  producto: { nombre: string; hotlink: string; pagina_ventas?: string };
+  producto: { nombre: string; hotlink: string; pagina_ventas?: string; tema?: string };
   texto?: string;
   clase?: string;
 }
@@ -21,11 +21,11 @@ const id = `dlg-${Math.random().toString(36).slice(2, 9)}`;
       <p class="muted">Elegí una opción para {producto.nombre}.</p>
 
       <a class="btn" href={producto.hotlink} target="_blank" rel="sponsored nofollow noopener"
-         data-evento="checkout" data-producto={producto.nombre}>
+         data-evento="checkout" data-producto={producto.nombre} data-tema={producto.tema}>
         Ir al checkout y comprar
       </a>
       <a class="btn btn-acento" href={producto.pagina_ventas} target="_blank" rel="sponsored nofollow noopener"
-         data-evento="pagina_ventas" data-producto={producto.nombre}>
+         data-evento="pagina_ventas" data-producto={producto.nombre} data-tema={producto.tema}>
         Ver la página de ventas
       </a>
 
@@ -34,7 +34,7 @@ const id = `dlg-${Math.random().toString(36).slice(2, 9)}`;
   </>
 ) : (
   <a class={clase} href={producto.hotlink} target="_blank" rel="sponsored nofollow noopener"
-     data-evento="checkout" data-producto={producto.nombre}>
+     data-evento="checkout" data-producto={producto.nombre} data-tema={producto.tema}>
     {etiqueta}
   </a>
 )}

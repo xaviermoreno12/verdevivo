@@ -109,22 +109,44 @@ const ga = SITIO.ga_id;
       <slot />
     </main>
     <Footer />
-    <script>
-      // Tracking de clicks para GA4. No hace nada si GA no está cargado (ga_id vacío) → no rompe.
+    <script is:inline define:vars={{ sitioNombre: SITIO.nombre }}>
+      // Tracking de clicks: SIEMPRE a Supabase (tabla seo_clicks, insert-only) y,
+      // si GA4 está activo (ga_id), también a gtag. Silencioso: nunca rompe la página.
+      const SUPA_URL = 'https://pgghzmlegyxkxgivlioy.supabase.co';
+      const SUPA_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBnZ2h6bWxlZ3l4a3hnaXZsaW95Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA1NDE1OTUsImV4cCI6MjA5NjExNzU5NX0.SwlVjQKdzmzQCREgjw_wF2iPxKCM6PAnioukBDOrC8M';
+
+      function beacon(fila) {
+        try {
+          fetch(SUPA_URL + '/rest/v1/seo_clicks', {
+            method: 'POST',
+            keepalive: true,
+            headers: {
+              'Content-Type': 'application/json',
+              apikey: SUPA_ANON,
+              Authorization: 'Bearer ' + SUPA_ANON,
+              Prefer: 'return=minimal',
+            },
+            body: JSON.stringify(fila),
+          }).catch(() => {});
+        } catch (e) { /* nunca romper la página por tracking */ }
+      }
+
       document.addEventListener('click', (e) => {
-        const g = (window as any).gtag;
-        if (typeof g !== 'function') return;
-        const el = (e.target as HTMLElement).closest('a, button') as HTMLElement | null;
+        const el = e.target.closest('a, button');
         if (!el) return;
-        const destino = (el as HTMLAnchorElement).href || '';
+        const destino = el.href || '';
+        const g = window.gtag;
 
         // Clicks de afiliado nombrados (data-evento en los links del modal / CTA directo).
         const evento = el.getAttribute('data-evento');
         if (evento) {
-          g('event', evento === 'checkout' ? 'cta_checkout' : 'cta_pagina_ventas', {
-            producto: el.getAttribute('data-producto') || '',
-            destino,
-          });
+          const nombreEvento = evento === 'checkout' ? 'cta_checkout' : 'cta_pagina_ventas';
+          const producto = el.getAttribute('data-producto') || '';
+          const tema = el.getAttribute('data-tema') || null;
+          beacon({ sitio: sitioNombre, path: location.pathname, evento: nombreEvento,
+                   seccion: 'cta', etiqueta: (el.textContent || '').trim().slice(0, 60),
+                   destino, producto, tema });
+          if (typeof g === 'function') g('event', nombreEvento, { producto, destino });
           return;
         }
 
@@ -136,11 +158,10 @@ const ga = SITIO.ga_id;
         else if (el.closest('.card')) seccion = 'post-card';
         else if (el.closest('.elegir-dlg') || el.matches('.btn, .btn-acento')) seccion = 'cta';
 
-        g('event', 'click_ui', {
-          seccion,
-          etiqueta: (el.textContent || '').trim().slice(0, 60),
-          destino,
-        });
+        const etiqueta = (el.textContent || '').trim().slice(0, 60);
+        beacon({ sitio: sitioNombre, path: location.pathname, evento: 'click_ui',
+                 seccion, etiqueta, destino });
+        if (typeof g === 'function') g('event', 'click_ui', { seccion, etiqueta, destino });
       });
     </script>
   </body>
