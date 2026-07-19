@@ -1,0 +1,27 @@
+---
+import { SITIO } from '../lib/sitio.ts';
+interface Props { producto: any; }
+const { producto } = Astro.props;
+const lm = producto?.lead_magnet;
+---
+{lm && lm.pdf ? (
+  <section class="caja-regalo" data-producto={producto.id} data-sitio={SITIO.nombre}
+           data-pdf={lm.pdf} data-lm={lm.titulo}>
+    <div class="regalo-form">
+      <p class="regalo-kicker">Regalo gratis</p>
+      <h3 class="regalo-titulo">{lm.titulo}</h3>
+      {lm.gancho && <p class="regalo-gancho">{lm.gancho}</p>}
+      <form class="regalo-form-inputs">
+        <input type="email" required placeholder="Escribí tu correo" aria-label="Tu correo" />
+        <button type="submit" class="btn btn-acento">Quiero el regalo</button>
+      </form>
+      <p class="regalo-mini">Te lo enviamos al correo y te pasamos consejos útiles. Sin spam; te podés dar de baja cuando quieras.</p>
+    </div>
+    <div class="regalo-gracias" hidden>
+      <p class="regalo-kicker">¡Listo!</p>
+      <h3 class="regalo-titulo">Tu regalo está acá</h3>
+      <a class="btn btn-acento regalo-descargar" href={lm.pdf} target="_blank" rel="noopener">Descargar el PDF</a>
+      <p class="regalo-mini">Guardá este PDF. También te lo enviamos por correo.</p>
+    </div>
+  </section>
+) : null}

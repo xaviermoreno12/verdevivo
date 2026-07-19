@@ -163,6 +163,32 @@ const ga = SITIO.ga_id;
                  seccion, etiqueta, destino });
         if (typeof g === 'function') g('event', 'click_ui', { seccion, etiqueta, destino });
       });
+
+      // Captura de leads (caja de regalo): guarda en seo_leads y muestra el link de descarga.
+      document.addEventListener('submit', (e) => {
+        const form = e.target && e.target.closest && e.target.closest('.regalo-form-inputs');
+        if (!form) return;
+        e.preventDefault();
+        const caja = form.closest('.caja-regalo');
+        const input = form.querySelector('input[type=email]');
+        const email = ((input && input.value) || '').trim();
+        if (!email || !caja) return;
+        beacon({ sitio: caja.dataset.sitio, path: location.pathname, evento: 'lead_capturado',
+                 seccion: 'regalo', etiqueta: (caja.dataset.lm || '').slice(0, 60),
+                 producto: caja.dataset.producto });
+        try {
+          fetch(SUPA_URL + '/rest/v1/seo_leads', {
+            method: 'POST', keepalive: true,
+            headers: { 'Content-Type': 'application/json', apikey: SUPA_ANON,
+                       Authorization: 'Bearer ' + SUPA_ANON, Prefer: 'return=minimal' },
+            body: JSON.stringify({ email, sitio: caja.dataset.sitio, producto_id: caja.dataset.producto,
+                                   lead_magnet: caja.dataset.lm, path_origen: location.pathname }),
+          }).catch(() => {});
+        } catch (err) { /* nunca romper */ }
+        const f = caja.querySelector('.regalo-form'); const gr = caja.querySelector('.regalo-gracias');
+        if (f) f.hidden = true; if (gr) gr.hidden = false;
+        if (typeof window.gtag === 'function') window.gtag('event', 'lead_capturado', { producto: caja.dataset.producto });
+      });
     </script>
   </body>
 </html>

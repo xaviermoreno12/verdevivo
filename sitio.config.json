@@ -47,7 +47,12 @@
       "destacado": true,
       "pagina_ventas": "https://hotmart.com/es/marketplace/productos/3-cursos-en-1-jardin-vertical-profesional-cuadros-vivos-y-huertas-verticales/N45319740V?ref=L81265980D",
       "tema": "Jardín vertical",
-      "cta_comprar": "Armar mi jardín ya 🌿"
+      "cta_comprar": "Armar mi jardín ya 🌿",
+      "lead_magnet": {
+        "titulo": "Tu jardín vertical en 7 días: plan día por día con lista de compras económica",
+        "gancho": "El plan de 7 días para armar tu jardín vertical sin gastar de más",
+        "pdf": "/regalos/jardin-vertical-7-dias.pdf"
+      }
     },
     {
       "id": "alimentos-organicos",
@@ -67,7 +72,12 @@
       "para_quien": "Personas que quieren comer más sano y producir su propia comida en casa.",
       "pagina_ventas": "https://hotmart.com/es/marketplace/productos/cultiva-tus-alimentos-organicos/N59315241U?ref=V77773424H",
       "tema": "Alimentos orgánicos",
-      "cta_comprar": "Empezar mi huerta ya 🌱"
+      "cta_comprar": "Empezar mi huerta ya 🌱",
+      "lead_magnet": {
+        "titulo": "Calendario de siembra: qué plantar cada mes para cosechar todo el año",
+        "gancho": "El calendario de siembra mes a mes para que no se te muera nada",
+        "pdf": "/regalos/calendario-siembra.pdf"
+      }
     }
   ]
 }

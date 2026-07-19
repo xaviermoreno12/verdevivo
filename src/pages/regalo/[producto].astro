@@ -1,0 +1,19 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CajaRegalo from '../../components/CajaRegalo.astro';
+import { PRODUCTOS } from '../../lib/sitio.ts';
+export function getStaticPaths() {
+  return PRODUCTOS.filter((p) => p.lead_magnet && p.lead_magnet.pdf)
+    .map((p) => ({ params: { producto: p.id }, props: { producto: p } }));
+}
+const { producto } = Astro.props;
+const lm = producto.lead_magnet;
+---
+<Layout title={`Regalo gratis: ${lm.titulo}`} description={lm.gancho || lm.titulo} canonicalPath={`/regalo/${producto.id}`}>
+  <article class="contenedor pagina" style="padding-top:2.5rem;max-width:44rem">
+    <p class="muted" style="margin:0 0 .3rem">Descarga gratuita</p>
+    <h1>{lm.titulo}</h1>
+    {lm.gancho && <p class="sub" style="color:var(--gris-suave)">{lm.gancho}</p>}
+    <CajaRegalo producto={producto} />
+  </article>
+</Layout>

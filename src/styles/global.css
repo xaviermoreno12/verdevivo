@@ -184,3 +184,16 @@ img { max-width: 100%; height: auto; border-radius: var(--radio); display: block
   padding: .5rem; display: flex; flex-direction: column; min-width: 12rem; z-index: 60; }
 .menu-panel a { padding: .6rem .8rem; border-radius: .5rem; white-space: nowrap; margin: 0; }
 .menu-panel a:hover { background: var(--gris-fondo); }
+
+/* ---- Caja de captura (lead magnet) ---- */
+.caja-regalo { background: linear-gradient(135deg, color-mix(in srgb, var(--primario) 8%, #fff), color-mix(in srgb, var(--acento) 12%, #fff));
+  border: 1px solid var(--gris-borde); border-radius: var(--radio); padding: 1.7rem 1.6rem; margin: 2.5rem 0; box-shadow: var(--sombra); }
+.regalo-kicker { font-weight: 700; color: var(--primario); font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; margin: 0 0 .35rem; }
+.regalo-titulo { margin: .1rem 0 .4rem; font-size: 1.3rem; color: var(--secundario); line-height: 1.25; }
+.regalo-gancho { color: var(--gris-suave); margin: 0 0 1.1rem; }
+.regalo-form-inputs { display: flex; gap: .6rem; flex-wrap: wrap; }
+.regalo-form-inputs input { flex: 1 1 13rem; padding: .85rem 1.1rem; border: 1px solid var(--gris-borde);
+  border-radius: 999px; font-size: 1rem; font-family: inherit; color: var(--gris-texto); }
+.regalo-form-inputs .btn { flex: 0 0 auto; }
+.regalo-mini { font-size: .78rem; color: var(--gris-suave); margin: .75rem 0 0; }
+.regalo-descargar { margin: .4rem 0 .2rem; }
