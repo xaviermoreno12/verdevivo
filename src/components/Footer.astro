@@ -10,12 +10,7 @@ const anio = new Date().getFullYear();
       <a href={url('/privacidad')}>Privacidad</a>
       <a href={url('/aviso-afiliados')}>Aviso de afiliados</a>
     </nav>
-    <p class="disclaimer">Este sitio contiene enlaces de afiliado: si comprás a través de ellos podemos recibir una comisión, sin costo extra para vos · <a href={url('/aviso-afiliados')}>Más info</a></p>
-    <p class="disclaimer">
-      <strong>Aviso de salud:</strong> El contenido de este sitio es informativo y no reemplaza el
-      consejo de un profesional de la salud. Consultá a tu médico antes de empezar cualquier plan de
-      alimentación, ejercicio o suplementación.
-    </p>
     <p class="muted">© {anio} {SITIO.nombre}. Todos los derechos reservados.</p>
+    <a class="legal-min" href={url('/terminos')}>Términos y condiciones</a>
   </div>
 </footer>

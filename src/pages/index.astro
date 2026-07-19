@@ -21,7 +21,7 @@ const schema = {
 <Layout title={`${SITIO.nombre} — ${SITIO.tagline}`} description={SITIO.descripcion} tipo="website" schema={schema}>
   <section class="hero">
     <div class="contenedor">
-      <span class="pill">Salud sin humo 🌱</span>
+      <span class="pill">{SITIO.hero_badge}</span>
       <h1>{SITIO.tagline}</h1>
       <p class="sub">{SITIO.descripcion}</p>
       <a href={url('/blog')} class="btn btn-acento">Leer las guías →</a>
@@ -30,7 +30,7 @@ const schema = {
 
   <section class="contenedor mt-2">
     <h2>Lo que recomendamos</h2>
-    <p class="muted">Probamos y analizamos programas para que no tires tu plata en dietas mágicas.</p>
+    <p class="muted">{SITIO.recomendados_sub}</p>
     <div class="grid mt-2">
       {PRODUCTOS.map((p) => <Reseña producto={p} />)}
     </div>

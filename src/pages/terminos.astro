@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITIO, url } from '../lib/sitio.ts';
+---
+<Layout
+  title="Términos y condiciones"
+  description={`Términos, aviso de afiliados y aviso legal de ${SITIO.nombre}.`}
+  canonicalPath="/terminos"
+>
+  <article class="contenedor pagina" style="padding-top:2.5rem">
+    <h1>Términos y condiciones</h1>
+
+    <h2>Sobre este sitio</h2>
+    <p>{SITIO.nombre} es un sitio de contenido informativo sobre {SITIO.nicho}. Publicamos guías,
+    reseñas y recomendaciones para ayudarte a aprender y elegir mejor.</p>
+
+    <h2>Aviso de afiliados</h2>
+    <p>Participamos en programas de afiliados, entre ellos el de Hotmart. Algunos enlaces a productos o
+    cursos son enlaces de afiliado: si comprás a través de ellos podemos recibir una comisión, <strong>sin
+    ningún costo adicional para vos</strong>. Pagás exactamente lo mismo que entrando directo, y esa
+    comisión es lo que nos permite seguir escribiendo guías gratuitas. Recomendamos productos porque
+    creemos que aportan valor, no solo porque paguen comisión.</p>
+
+    <h2>Aviso</h2>
+    <p>El contenido de {SITIO.nombre} es informativo y de divulgación sobre jardinería y huerta. Los resultados dependen de tu clima, suelo y cuidados. Ante el uso de productos o herramientas, seguí siempre las indicaciones del fabricante.</p>
+
+    <h2>Enlaces externos</h2>
+    <p>Podemos enlazar a sitios de terceros (como las páginas de venta de los productos). No somos
+    responsables del contenido, las políticas ni las prácticas de esos sitios.</p>
+
+    <h2>Propiedad intelectual</h2>
+    <p>Los textos e imágenes de {SITIO.nombre} son de sus respectivos autores. No los reproduzcas sin
+    autorización. Las marcas mencionadas pertenecen a sus dueños.</p>
+
+    <h2>Contacto</h2>
+    <p>Ante cualquier consulta podés escribirnos desde la <a href={url('/contacto')}>página de contacto</a>.
+    Ver también nuestro <a href={url('/aviso-afiliados')}>aviso de afiliados</a> y la
+    <a href={url('/privacidad')}>política de privacidad</a>.</p>
+
+    <p class="muted">Las decisiones de compra son tuyas y bajo tu criterio. No garantizamos resultados:
+    cada producto es responsabilidad de quien lo vende.</p>
+  </article>
+</Layout>

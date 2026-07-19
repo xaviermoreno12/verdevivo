@@ -75,10 +75,11 @@ img { max-width: 100%; height: auto; border-radius: var(--radio); display: block
   background: rgba(255,255,255,.85); backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--gris-borde);
 }
-.site-header .contenedor-ancho { display: flex; align-items: center; justify-content: space-between; padding-block: .9rem; }
+.site-header .contenedor-ancho { display: grid; grid-template-columns: max-content 1fr; align-items: center; gap: 1.25rem; padding-block: .9rem; }
 .logo { font-family: var(--fuente-titulos), sans-serif; font-weight: 800; font-size: 1.3rem; color: var(--secundario); letter-spacing: -.03em; }
 .logo span { color: var(--primario); }
-.nav a { color: var(--secundario); font-weight: 600; margin-left: 1.4rem; font-size: .98rem; }
+.nav { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .4rem 1.1rem; border-left: 1px solid var(--gris-borde); padding-left: 1.25rem; }
+.nav a { color: var(--secundario); font-weight: 600; font-size: .98rem; }
 
 /* ---- Hero ---- */
 .hero { padding: clamp(3rem, 8vw, 5.5rem) 0 3rem; text-align: center; background:
@@ -165,3 +166,8 @@ img { max-width: 100%; height: auto; border-radius: var(--radio); display: block
 .center { text-align: center; }
 .mt-2 { margin-top: 2rem; } .mb-1 { margin-bottom: 1rem; }
 .muted { color: var(--gris-suave); }
+
+/* ---- Link legal discreto + crisis ---- */
+.legal-min { display:block; text-align:center; margin-top:1.5rem; color:var(--secundario); font-size:.8rem; text-decoration:none; }
+.legal-min:hover, .legal-min:focus { color:#94a3b8; text-decoration:underline; }
+.footer-crisis { text-align:center; font-size:.9rem; color:#e2e8f0; margin-top:1.2rem; }
