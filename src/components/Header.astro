@@ -11,9 +11,23 @@ const categorias = (PRODUCTOS || [])
     <a href={url('/')} class="logo">{SITIO.nombre.split(' ')[0]}<span>{SITIO.nombre.split(' ').slice(1).join(' ')}</span></a>
     <nav class="nav">
       <a href={url('/')}>Inicio</a>
-      <a href={url('/blog')}>Blog</a>
-      {categorias.map((c) => <a href={url(`/blog?cat=${c.id}`)}>{c.tema}</a>)}
-      <a href={url('/sobre-nosotros')}>Nosotros</a>
+      <details class="menu">
+        <summary>Menú ▾</summary>
+        <div class="menu-panel">
+          <a href={url('/blog')}>Blog</a>
+          {categorias.map((c) => <a href={url(`/blog?cat=${c.id}`)}>{c.tema}</a>)}
+          <a href={url('/sobre-nosotros')}>Nosotros</a>
+        </div>
+      </details>
     </nav>
   </div>
 </header>
+
+<script is:inline>
+  // Cerrar el menú del header al hacer click afuera.
+  document.addEventListener('click', (e) => {
+    document.querySelectorAll('details.menu[open]').forEach((d) => {
+      if (!d.contains(e.target)) d.removeAttribute('open');
+    });
+  });
+</script>

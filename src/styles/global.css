@@ -171,3 +171,15 @@ img { max-width: 100%; height: auto; border-radius: var(--radio); display: block
 .legal-min { display:block; text-align:center; margin-top:1.5rem; color:var(--secundario); font-size:.8rem; text-decoration:none; }
 .legal-min:hover, .legal-min:focus { color:#94a3b8; text-decoration:underline; }
 .footer-crisis { text-align:center; font-size:.9rem; color:#e2e8f0; margin-top:1.2rem; }
+
+/* ---- Menú colapsable del header ---- */
+.menu { position: relative; }
+.menu summary { list-style: none; cursor: pointer; font-weight: 600; color: var(--secundario);
+  font-size: .98rem; padding: .35rem .85rem; border: 1px solid var(--gris-borde); border-radius: 999px; user-select: none; }
+.menu summary::-webkit-details-marker { display: none; }
+.menu[open] summary { background: var(--gris-fondo); }
+.menu-panel { position: absolute; right: 0; top: calc(100% + .5rem); background: #fff;
+  border: 1px solid var(--gris-borde); border-radius: var(--radio); box-shadow: var(--sombra);
+  padding: .5rem; display: flex; flex-direction: column; min-width: 12rem; z-index: 60; }
+.menu-panel a { padding: .6rem .8rem; border-radius: .5rem; white-space: nowrap; margin: 0; }
+.menu-panel a:hover { background: var(--gris-fondo); }
