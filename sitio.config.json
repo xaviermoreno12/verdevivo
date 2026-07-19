@@ -46,7 +46,8 @@
       "para_quien": "Amantes de las plantas, jardineros y cualquiera que quiera armar su jardín vertical en casa.",
       "destacado": true,
       "pagina_ventas": "https://hotmart.com/es/marketplace/productos/3-cursos-en-1-jardin-vertical-profesional-cuadros-vivos-y-huertas-verticales/N45319740V?ref=L81265980D",
-      "tema": "Jardín vertical"
+      "tema": "Jardín vertical",
+      "cta_comprar": "Armar mi jardín ya 🌿"
     },
     {
       "id": "alimentos-organicos",
@@ -65,7 +66,8 @@
       ],
       "para_quien": "Personas que quieren comer más sano y producir su propia comida en casa.",
       "pagina_ventas": "https://hotmart.com/es/marketplace/productos/cultiva-tus-alimentos-organicos/N59315241U?ref=V77773424H",
-      "tema": "Alimentos orgánicos"
+      "tema": "Alimentos orgánicos",
+      "cta_comprar": "Empezar mi huerta ya 🌱"
     }
   ]
 }

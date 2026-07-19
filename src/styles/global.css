@@ -139,9 +139,10 @@ img { max-width: 100%; height: auto; border-radius: var(--radio); display: block
 
 /* ---- Cartel de 2 opciones (<dialog> nativo, sin framework) ---- */
 .elegir-dlg {
+  position: fixed; inset: 0; margin: auto; height: fit-content;
   border: none; border-radius: var(--radio); padding: 1.8rem 1.6rem;
   max-width: 26rem; width: calc(100% - 2rem); box-shadow: 0 20px 60px rgba(15,23,42,.25);
-  color: var(--gris-texto);
+  color: var(--gris-texto); text-align: center;
 }
 .elegir-dlg::backdrop { background: rgba(15, 23, 42, .55); backdrop-filter: blur(2px); }
 .elegir-dlg h3 { margin-top: 0; }
