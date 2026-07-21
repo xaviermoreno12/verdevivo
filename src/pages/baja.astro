@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Baja de correos" description="Cancelar tu suscripción a los correos." canonicalPath="/baja">
+  <article class="contenedor pagina" style="padding-top:2.5rem;max-width:40rem">
+    <h1>Baja de correos</h1>
+    <p id="baja-estado">Procesando tu baja…</p>
+    <p class="muted">Si te equivocaste, no pasa nada: podés volver a suscribirte cuando quieras desde cualquier artículo.</p>
+  </article>
+</Layout>
+<script is:inline>
+  (async () => {
+    const el = document.getElementById('baja-estado');
+    const token = new URLSearchParams(location.search).get('token');
+    if (!token) { el.textContent = 'Este link no es válido.'; return; }
+    const SUPA = 'https://pgghzmlegyxkxgivlioy.supabase.co';
+    const ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBnZ2h6bWxlZ3l4a3hnaXZsaW95Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA1NDE1OTUsImV4cCI6MjA5NjExNzU5NX0.SwlVjQKdzmzQCREgjw_wF2iPxKCM6PAnioukBDOrC8M';
+    try {
+      const r = await fetch(SUPA + '/rest/v1/rpc/baja_por_token', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', apikey: ANON, Authorization: 'Bearer ' + ANON },
+        body: JSON.stringify({ t: token })
+      });
+      el.textContent = r.ok ? 'Listo, te desuscribimos. No vas a recibir más correos nuestros. ¡Gracias por haber estado!' : 'No pudimos procesar la baja ahora. Escribinos y lo resolvemos a mano.';
+    } catch (e) { el.textContent = 'No pudimos procesar la baja ahora. Probá de nuevo en un rato.'; }
+  })();
+</script>
