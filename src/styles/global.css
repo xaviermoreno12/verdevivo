@@ -197,3 +197,9 @@ img { max-width: 100%; height: auto; border-radius: var(--radio); display: block
 .regalo-form-inputs .btn { flex: 0 0 auto; }
 .regalo-mini { font-size: .78rem; color: var(--gris-suave); margin: .75rem 0 0; }
 .regalo-descargar { margin: .4rem 0 .2rem; }
+
+/* ---- Auto-traducción: ocultar la barra/artefactos de Google Translate ---- */
+.goog-te-banner-frame, .skiptranslate > iframe { display: none !important; }
+body { top: 0 !important; }
+#goog-gt-tt, .goog-te-balloon-frame { display: none !important; }
+.goog-text-highlight { background: none !important; box-shadow: none !important; }
