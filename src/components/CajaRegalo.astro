@@ -3,6 +3,7 @@ import { SITIO } from '../lib/sitio.ts';
 interface Props { producto: any; }
 const { producto } = Astro.props;
 const lm = producto?.lead_magnet;
+const tema = producto?.tema ? String(producto.tema).toLowerCase() : '';
 const WA = '5492262324230';
 const waMsg = lm ? `Hola! Quiero el regalo «${lm.titulo}» de ${SITIO.nombre} 🎁` : '';
 const waUrl = `https://wa.me/${WA}?text=${encodeURIComponent(waMsg)}`;
@@ -18,7 +19,8 @@ const waUrl = `https://wa.me/${WA}?text=${encodeURIComponent(waMsg)}`;
         <input type="email" required placeholder="Escribí tu correo" aria-label="Tu correo" />
         <button type="submit" class="btn btn-acento">Quiero el regalo</button>
       </form>
-      <p class="regalo-mini">Te lo enviamos al correo y te pasamos consejos útiles. Sin spam; te podés dar de baja cuando quieras.</p>
+      <p class="regalo-valor">✔ No es solo el regalo: al dejar tu correo te sumás para <strong>aprender {tema ? `todo sobre ${tema}` : 'todo sobre el tema'}</strong> — consejos, guías y trucos prácticos, gratis y directo a tu bandeja.</p>
+      <p class="regalo-mini">Sin spam; te podés dar de baja cuando quieras.</p>
 
       <div class="regalo-sep"><span>o, si preferís, sin dejar tu correo</span></div>
       <a class="btn-wa" href={waUrl} target="_blank" rel="noopener nofollow">

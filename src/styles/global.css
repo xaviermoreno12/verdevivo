@@ -203,3 +203,36 @@ img { max-width: 100%; height: auto; border-radius: var(--radio); display: block
 body { top: 0 !important; }
 #goog-gt-tt, .goog-te-balloon-frame { display: none !important; }
 .goog-text-highlight { background: none !important; box-shadow: none !important; }
+
+/* ---- Home: portada que ayuda + temario + regalos ---- */
+.hero-ayuda { font-size: 1.05rem; color: var(--secundario); font-weight: 600; max-width: 34rem;
+  margin: .2rem auto 1.6rem; }
+html { scroll-behavior: smooth; }
+#temario, #regalo { scroll-margin-top: 80px; }
+
+.temario { display: grid; gap: .9rem; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .temario { grid-template-columns: 1fr 1fr; } }
+.temario-item { display: flex; flex-direction: column; gap: .25rem; background: #fff;
+  border: 1px solid var(--gris-borde); border-left: 4px solid var(--primario);
+  border-radius: var(--radio); padding: 1rem 1.15rem; transition: transform .15s ease, box-shadow .15s ease; }
+.temario-item:hover { transform: translateY(-2px); box-shadow: var(--sombra); }
+.temario-tema { font-family: var(--fuente-titulos), sans-serif; font-weight: 800; color: var(--secundario); font-size: 1.1rem; }
+.temario-desc { color: var(--gris-suave); font-size: .92rem; line-height: 1.4; }
+.temario-todos { border-left-color: var(--acento); background: var(--gris-fondo); }
+
+.regalos-lista { display: grid; gap: 1.5rem; }
+@media (min-width: 900px) { .regalos-lista:has(.caja-regalo + .caja-regalo) { grid-template-columns: 1fr 1fr; } }
+.regalos-lista .caja-regalo { margin: 0; }
+
+/* separador "o" + botón WhatsApp */
+.regalo-sep { display: flex; align-items: center; gap: .8rem; margin: 1.1rem 0 .8rem; color: var(--gris-suave); font-size: .8rem; }
+.regalo-sep::before, .regalo-sep::after { content: ""; flex: 1; height: 1px; background: var(--gris-borde); }
+.btn-wa { display: inline-flex; align-items: center; justify-content: center; gap: .55rem; width: 100%;
+  background: #25D366; color: #fff; font-weight: 700; font-family: var(--fuente-titulos), sans-serif;
+  padding: .9rem 1.4rem; border-radius: 999px; font-size: 1.02rem; box-shadow: var(--sombra);
+  transition: transform .15s ease, filter .15s ease; }
+.btn-wa:hover { transform: translateY(-2px); filter: brightness(1.05); }
+.btn-wa svg { flex: 0 0 auto; }
+.regalo-valor { font-size: .92rem; color: var(--secundario); line-height: 1.5; margin: .8rem 0 .2rem;
+  padding-left: .1rem; }
+.regalo-valor strong { color: var(--primario); }
