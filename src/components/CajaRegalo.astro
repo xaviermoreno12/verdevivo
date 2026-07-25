@@ -3,10 +3,13 @@ import { SITIO } from '../lib/sitio.ts';
 interface Props { producto: any; }
 const { producto } = Astro.props;
 const lm = producto?.lead_magnet;
+const WA = '5492262324230';
+const waMsg = lm ? `Hola! Quiero el regalo «${lm.titulo}» de ${SITIO.nombre} 🎁` : '';
+const waUrl = `https://wa.me/${WA}?text=${encodeURIComponent(waMsg)}`;
 ---
 {lm && lm.pdf ? (
   <section class="caja-regalo" data-producto={producto.id} data-sitio={SITIO.nombre}
-           data-pdf={lm.pdf} data-lm={lm.titulo}>
+           data-lm={lm.titulo}>
     <div class="regalo-form">
       <p class="regalo-kicker">Regalo gratis</p>
       <h3 class="regalo-titulo">{lm.titulo}</h3>
@@ -16,12 +19,17 @@ const lm = producto?.lead_magnet;
         <button type="submit" class="btn btn-acento">Quiero el regalo</button>
       </form>
       <p class="regalo-mini">Te lo enviamos al correo y te pasamos consejos útiles. Sin spam; te podés dar de baja cuando quieras.</p>
+
+      <div class="regalo-sep"><span>o, si preferís, sin dejar tu correo</span></div>
+      <a class="btn-wa" href={waUrl} target="_blank" rel="noopener nofollow">
+        <svg viewBox="0 0 32 32" width="20" height="20" aria-hidden="true" fill="currentColor"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.6c1.7.9 3.7 1.4 5.8 1.4h.1c6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-4.8 1 1-4.7-.3-.4C5.5 18.4 5 16.7 5 15 5 9 10 4 16 4s11 5 11 11-5 9.8-11 9.8zm6-8.3c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.6-.1-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.5 3.8 6 5.3 2.2.9 3 1 4.1.9.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg>
+        Recibirlo por WhatsApp
+      </a>
     </div>
     <div class="regalo-gracias" hidden>
       <p class="regalo-kicker">¡Listo!</p>
-      <h3 class="regalo-titulo">Tu regalo está acá</h3>
-      <a class="btn btn-acento regalo-descargar" href={lm.pdf} target="_blank" rel="noopener">Descargar el PDF</a>
-      <p class="regalo-mini">Guardá este PDF. También te lo enviamos por correo.</p>
+      <h3 class="regalo-titulo">Te lo enviamos a tu correo 📩</h3>
+      <p class="regalo-mini">Revisá tu bandeja de entrada (y la carpeta de spam por las dudas): en un ratito te llega tu regalo. Si preferís, también te lo pasamos por WhatsApp.</p>
     </div>
   </section>
 ) : null}

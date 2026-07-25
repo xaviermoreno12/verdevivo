@@ -88,4 +88,4 @@ Cuando se empieza a cultivar, hay algunos tropiezos que son bastante comunes. Te
 
 ## Cierre: ¡Atrévete a cultivar tus propios alimentos!
 
-Ahora que ya tenés toda la información necesaria, solo falta que tomes la decisión de empezar tu huerta en casa para principiantes. Te aseguro que los beneficios son enormes, tanto para tu salud como para tu bienestar general. Si querés aprender a fondo sobre cómo cultivar tus propios vegetales de manera orgánica, sin pesticidas ni agroquímicos, te recomiendo la **MasterClass Cultiva tus Alimentos Orgánicos**. ¡Transformá tu hogar en un espacio de cultivo saludable y disfrutá de los beneficios de alimentarte con productos frescos y saludables!
+Con paciencia y estos consejos, tu proyecto verde va a prosperar. Esperamos que esta guía te sea útil: seguí explorando el blog para más ideas de jardinería.

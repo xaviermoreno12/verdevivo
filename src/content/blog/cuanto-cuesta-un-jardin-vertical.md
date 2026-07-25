@@ -91,4 +91,4 @@ Vas a necesitar una estructura (puede ser de madera o metal), sustrato, plantas 
 
 ## Cierre
 
-Ahora que ya conocés cuánto cuesta un jardín vertical y cómo influye cada factor, es el momento de dar el siguiente paso. Si sos de los que les gusta aprender y quieren llevar su pasión por la jardinería vertical al siguiente nivel, te invito a explorar el **curso '3 Cursos en 1: Jardín Vertical Profesional'**. Con este curso, no solo aprenderás a crear tu propio jardín vertical en solo 8 días, sino que también recibirás apoyo personalizado y acceso a una comunidad global de entusiastas de la jardinería. ¡Es el momento de transformar tu espacio y darle ese toque verde que tanto deseás! No te quedes afuera de esta oportunidad.
+Con paciencia y estos consejos, tu proyecto verde va a prosperar. Esperamos que esta guía te sea útil: seguí explorando el blog para más ideas de jardinería.

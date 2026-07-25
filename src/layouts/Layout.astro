@@ -137,26 +137,13 @@ const ga = SITIO.ga_id;
         const destino = el.href || '';
         const g = window.gtag;
 
-        // Clicks de afiliado nombrados (data-evento en los links del modal / CTA directo).
-        const evento = el.getAttribute('data-evento');
-        if (evento) {
-          const nombreEvento = evento === 'checkout' ? 'cta_checkout' : 'cta_pagina_ventas';
-          const producto = el.getAttribute('data-producto') || '';
-          const tema = el.getAttribute('data-tema') || null;
-          beacon({ sitio: sitioNombre, path: location.pathname, evento: nombreEvento,
-                   seccion: 'cta', etiqueta: (el.textContent || '').trim().slice(0, 60),
-                   destino, producto, tema });
-          if (typeof g === 'function') g('event', nombreEvento, { producto, destino });
-          return;
-        }
-
-        // Cualquier otro click en un link o botón: sección + texto + destino.
+        // Sección + texto + destino de cualquier click en un link o botón.
         let seccion = 'contenido';
         if (el.closest('.site-header')) seccion = 'nav';
         else if (el.closest('.filtros')) seccion = 'blog-filtro';
         else if (el.closest('.site-footer')) seccion = 'footer';
         else if (el.closest('.card')) seccion = 'post-card';
-        else if (el.closest('.elegir-dlg') || el.matches('.btn, .btn-acento')) seccion = 'cta';
+        else if (el.closest('.caja-regalo')) seccion = 'regalo';
 
         const etiqueta = (el.textContent || '').trim().slice(0, 60);
         beacon({ sitio: sitioNombre, path: location.pathname, evento: 'click_ui',

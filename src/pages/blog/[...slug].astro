@@ -1,13 +1,11 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import CTA from '../../components/CTA.astro';
 import CajaRegalo from '../../components/CajaRegalo.astro';
 import { getCollection, render } from 'astro:content';
 import { SITIO, PRODUCTOS, PRODUCTO_DESTACADO, AUTOR, urlAbsoluta } from '../../lib/sitio.ts';
 
 export async function getStaticPaths() {
-  // Solo genera los posts cuya fecha ya llegó (drip: 1 por día con rebuild diario)
-  const posts = await getCollection('blog', ({ data }) => !data.draft && data.pubDate.valueOf() <= Date.now());
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
   return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
 }
 
@@ -86,8 +84,6 @@ if (d.pasos && d.pasos.length > 0) {
     <div class="prose">
       <Content />
     </div>
-
-    <CTA producto={producto} />
 
     <CajaRegalo producto={producto} />
 

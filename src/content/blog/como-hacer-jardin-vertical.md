@@ -95,4 +95,4 @@ Sí, es una opción creativa y ecológica. Solo asegurate de que tengan buen dre
 
 ## Cierre: Creá tu jardín vertical profesional
 
-Si te quedaste con ganas de aprender más y llevar tu pasión por la jardinería vertical a otro nivel, te recomiendo el curso '3 Cursos en 1: Jardín Vertical Profesional'. En este curso, un ingeniero agrónomo con más de 20 años de experiencia te guiará a crear tu propio jardín vertical en solo 8 días. Además, vas a tener acceso a una comunidad exclusiva y asesorías personalizadas. ¡No te lo pierdas! Transformá tu espacio y llená tu vida de verde.
+Con paciencia y estos consejos, tu proyecto verde va a prosperar. Esperamos que esta guía te sea útil: seguí explorando el blog para más ideas de jardinería.

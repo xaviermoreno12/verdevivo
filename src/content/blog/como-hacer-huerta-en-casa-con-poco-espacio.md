@@ -85,6 +85,6 @@ Uno de los errores más frecuentes es pensar que las plantas pueden crecer sin c
 
 ## Tu huerta, tu salud
 
-Si estás listo para dar el paso y comenzar a cultivar tus propios alimentos de manera orgánica, recordá que no solo es un pasatiempo, sino una inversión en tu salud. Te invito a que consideres participar en la MasterClass **Cultiva tus Alimentos Orgánicos**. Aprenderás a cultivar tus propios vegetales sin pesticidas ni agroquímicos, y convertir tu hogar en un espacio de cultivo saludable. ¡Es una forma maravillosa de cuidar de vos y de tu familia!
+Con paciencia y estos consejos, tu proyecto verde va a prosperar. Esperamos que esta guía te sea útil: seguí explorando el blog para más ideas de jardinería.
 
 Así que, ¿estás preparado para hacer de tu hogar un oasis verde? ¡Manos a la obra!

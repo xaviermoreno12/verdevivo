@@ -103,6 +103,6 @@ No, son plantas de bajo mantenimiento. Con algunos cuidados básicos, tu jardín
 
 ## Cierre
 
-Crear un jardín vertical con suculentas es una excelente manera de darle vida a tu espacio, ya sea en el interior o en el exterior. Si querés aprender más y llevar tus habilidades de jardinería vertical al siguiente nivel, te invito a conocer el curso **3 Cursos en 1: Jardín Vertical Profesional**. Aprendé a crear tu propio jardín vertical desde cero, con la guía de un experto que tiene más de 20 años de experiencia. ¡No te lo pierdas! 
+Con paciencia y estos consejos, tu proyecto verde va a prosperar. Esperamos que esta guía te sea útil: seguí explorando el blog para más ideas de jardinería.
 
 Transformá tu espacio y unite a una comunidad apasionada por la jardinería vertical. ¡Animate a dar el paso y empezá hoy mismo!

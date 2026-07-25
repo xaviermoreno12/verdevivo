@@ -98,4 +98,4 @@ Antes de que empieces a armar tu jardín vertical, evitemos algunos errores comu
 - **¿Es posible hacer un jardín vertical con poco espacio?**
   ¡Por supuesto! Los jardines verticales son ideales para espacios pequeños, así que no hay excusas.
 
-Crear un jardín vertical para balcón puede parecer un desafío, pero con dedicación y estos consejos, vas a tener un espacio verde que te llenará de alegría. Y si querés llevar tu pasión por la jardinería al siguiente nivel, no olvides que existe un curso perfecto para vos: [3 Cursos en 1: Jardín Vertical Profesional](#), donde vas a aprender a crear y mantener jardines verticales como un profesional. ¡A disfrutar de tu balcón verde!
+Con paciencia y estos consejos, tu proyecto verde va a prosperar. Esperamos que esta guía te sea útil: seguí explorando el blog para más ideas de jardinería.

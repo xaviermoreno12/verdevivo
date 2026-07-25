@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
-import { SITIO, PRODUCTOS, urlAbsoluta } from '../lib/sitio.ts';
+import { SITIO, urlAbsoluta } from '../lib/sitio.ts';
 
 // llms.txt — estándar emergente que describe el sitio para los modelos de IA
 // (qué es, de qué trata y sus mejores páginas), para facilitar que lo citen.
@@ -17,9 +17,6 @@ export const GET: APIRoute = async () => {
     '',
     '## Guías',
     ...posts.slice(0, 40).map((p) => `- [${p.data.title}](${urlAbsoluta('/blog/' + p.id)}): ${p.data.description}`),
-    '',
-    '## Recomendaciones',
-    ...PRODUCTOS.map((p) => `- ${p.nombre}: ${p.descripcion_corta}`),
     '',
     '## Más',
     `- [Sobre nosotros](${urlAbsoluta('/sobre-nosotros')})`,

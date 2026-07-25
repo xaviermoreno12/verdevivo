@@ -89,4 +89,4 @@ A: Absolutamente, de hecho, un jardín vertical puede ser la mejor manera de apr
 
 ## Cierre
 
-¡Listo! Ahora ya sabés cómo colgar un jardín vertical y darle vida a esos espacios que parecían olvidados. Si te gustaría aprender más sobre cómo hacer un jardín vertical, desde los fundamentos hasta el mantenimiento profesional, te recomiendo el curso '3 Cursos en 1: Jardín Vertical Profesional'. En este curso, un ingeniero agrónomo con más de 20 años de experiencia te guiará para que, en solo 8 días, puedas crear y mantener tu propio jardín vertical. ¡Animate a transformar tu espacio y sumate a una comunidad apasionada por la jardinería vertical!
+Con paciencia y estos consejos, tu proyecto verde va a prosperar. Esperamos que esta guía te sea útil: seguí explorando el blog para más ideas de jardinería.

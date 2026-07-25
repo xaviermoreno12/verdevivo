@@ -96,4 +96,4 @@ No todo es tan fácil como parece, y hay algunos errores comunes que conviene ev
 
 ## Conclusión
 
-Si querés darle un giro a tu hogar y disfrutar de la belleza y los beneficios de un jardín vertical, no hay mejor momento que ahora. No importa si sos principiante o un jardinero experimentado, hay un sinfín de opciones y diseños para explorar. Y si querés llevar tu aprendizaje al siguiente nivel, te recomiendo el curso '3 Cursos en 1: Jardín Vertical Profesional'. Aprendé a crear y mantener jardines verticales de manera profesional con la guía de un experto. ¡Animate a dar el primer paso hacia un espacio verde y lleno de vida!
+Con paciencia y estos consejos, tu proyecto verde va a prosperar. Esperamos que esta guía te sea útil: seguí explorando el blog para más ideas de jardinería.

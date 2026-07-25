@@ -1,14 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Reseña from '../components/Reseña.astro';
 import PostCard from '../components/PostCard.astro';
-import { SITIO, PRODUCTOS, PRODUCTO_DESTACADO, urlAbsoluta, url } from '../lib/sitio.ts';
+import { SITIO, PRODUCTOS, urlAbsoluta, url } from '../lib/sitio.ts';
 import CajaRegalo from '../components/CajaRegalo.astro';
 import { getCollection } from 'astro:content';
 
-const posts = (await getCollection('blog', ({ data }) => !data.draft && data.pubDate.valueOf() <= Date.now()))
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 6);
+
+const temas = (PRODUCTOS || []).filter((p) => p.tema);
 
 const schema = {
   '@context': 'https://schema.org',
@@ -20,27 +21,36 @@ const schema = {
 };
 ---
 <Layout title={`${SITIO.nombre} — ${SITIO.tagline}`} description={SITIO.descripcion} tipo="website" schema={schema}>
+  <!-- 1) Portada: queremos ayudar -->
   <section class="hero">
     <div class="contenedor">
       <span class="pill">{SITIO.hero_badge}</span>
       <h1>{SITIO.tagline}</h1>
       <p class="sub">{SITIO.descripcion}</p>
-      <a href={url('/blog')} class="btn btn-acento">Leer las guías →</a>
+      <p class="hero-ayuda">Estamos para ayudarte a lograrlo: guías claras, gratis y al grano — sin vueltas ni humo.</p>
+      <a href="#regalo" class="btn btn-acento">Quiero mi regalo gratis 🎁</a>
     </div>
   </section>
 
-  <section class="contenedor mt-2">
-    <h2>Lo que recomendamos</h2>
-    <p class="muted">{SITIO.recomendados_sub}</p>
-    <div class="grid mt-2">
-      {PRODUCTOS.map((p) => <Reseña producto={p} />)}
+  <!-- 2) Temario: qué vas a encontrar -->
+  <section id="temario" class="contenedor mt-2">
+    <h2>Qué vas a encontrar acá</h2>
+    <p class="muted">Todo explicado simple y sin costo. Estos son los temas que tratamos:</p>
+    <div class="temario mt-2">
+      {temas.map((p) => (
+        <a class="temario-item" href={url(`/blog?cat=${p.id}`)}>
+          <span class="temario-tema">{p.tema}</span>
+          <span class="temario-desc">Guías y consejos, explicados simple y paso a paso.</span>
+        </a>
+      ))}
+      <a class="temario-item temario-todos" href={url('/blog')}>
+        <span class="temario-tema">Todas las guías →</span>
+        <span class="temario-desc">Explorá todos los artículos del blog.</span>
+      </a>
     </div>
   </section>
 
-  <section class="contenedor mt-2">
-    <CajaRegalo producto={PRODUCTO_DESTACADO} />
-  </section>
-
+  <!-- 3) Últimas guías -->
   {posts.length > 0 && (
     <section class="contenedor-ancho mt-2">
       <h2>Últimas guías del blog</h2>
@@ -49,4 +59,13 @@ const schema = {
       </div>
     </section>
   )}
+
+  <!-- 5) Regalos (abajo del todo): por correo o WhatsApp -->
+  <section id="regalo" class="contenedor mt-2">
+    <h2>Llevate tu regalo gratis 🎁</h2>
+    <p class="muted">Elegí el que te sirva. Te lo mandamos por correo o, si preferís, directo a tu WhatsApp.</p>
+    <div class="regalos-lista mt-2">
+      {PRODUCTOS.map((p) => <CajaRegalo producto={p} />)}
+    </div>
+  </section>
 </Layout>

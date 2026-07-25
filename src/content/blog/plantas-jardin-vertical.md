@@ -93,6 +93,6 @@ Uno de los errores más comunes es elegir plantas que no se adaptan al espacio o
 
 ## Cierre
 
-Ahora que sabés qué plantas usar en un jardín vertical, ¡estás listo para transformar tu espacio! Si querés profundizar más en el tema y volverte un verdadero maestro en jardinería vertical, te recomiendo el curso **3 Cursos en 1: Jardín Vertical Profesional**. En solo 8 días, podrías estar creando tu propio jardín vertical con el apoyo de un ingeniero agrónomo experto. ¡No te lo pierdas!
+Con paciencia y estos consejos, tu proyecto verde va a prosperar. Esperamos que esta guía te sea útil: seguí explorando el blog para más ideas de jardinería.
 
 ¡Manos a la obra y que tu jardín vertical sea un éxito!

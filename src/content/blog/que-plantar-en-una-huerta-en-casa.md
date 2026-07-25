@@ -93,4 +93,4 @@ Si necesitás más ayuda con los errores comunes que se pueden cometer al comenz
 6. **¿Puedo cultivar alimentos sin pesticidas?**
    ¡Claro! De hecho, cultivar de manera orgánica es una excelente manera de asegurarte de lo que comes. 
 
-Si estás listo para dar el siguiente paso y aprender a cultivar tus propios alimentos de forma orgánica, te invito a conocer la MasterClass **Cultiva tus Alimentos Orgánicos**. Aprenderás a evitar pesticidas y agroquímicos, y mejorarás tu salud y bienestar. ¡No hay mejor manera de cuidar de vos y tu familia que con alimentos frescos y saludables!
+Con paciencia y estos consejos, tu proyecto verde va a prosperar. Esperamos que esta guía te sea útil: seguí explorando el blog para más ideas de jardinería.

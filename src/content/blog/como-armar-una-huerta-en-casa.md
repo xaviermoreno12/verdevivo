@@ -97,4 +97,4 @@ No te preocupes, todos cometemos errores. Aquí van algunos que podés evitar:
 
 ## Cierre
 
-Armar una huerta en casa es un viaje gratificante y saludable. Aprender a cultivar tus propios alimentos no solo transforma tu hogar, sino también tu bienestar. Si querés llevar esto al siguiente nivel, considerá la MasterClass **Cultiva tus Alimentos Orgánicos**. Aprendé a cultivar vegetales de forma orgánica, sin pesticidas ni agroquímicos, y disfrutá de todos los beneficios que esto trae a tu salud y a tu familia. ¡Tu huerta te está esperando!
+Con paciencia y estos consejos, tu proyecto verde va a prosperar. Esperamos que esta guía te sea útil: seguí explorando el blog para más ideas de jardinería.

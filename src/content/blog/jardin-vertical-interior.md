@@ -92,6 +92,6 @@ Empezar un jardín vertical interior es más sencillo de lo que parece. Solo nec
 
 ## Cierre
 
-Ahora que conocés los secretos para tener un jardín vertical interior, ¡es hora de poner manos a la obra! Si querés aprender más sobre este tema y convertirte en un experto, te recomiendo el curso [3 Cursos en 1: Jardín Vertical Profesional](#) que te enseñará a crear tu propio jardín vertical paso a paso, sin importar si empezás desde cero. Con la guía de un ingeniero agrónomo con más de 20 años de experiencia, estarás listo para transformar cualquier espacio. ¡Animate a darle vida a tus paredes!  
+Con paciencia y estos consejos, tu proyecto verde va a prosperar. Esperamos que esta guía te sea útil: seguí explorando el blog para más ideas de jardinería.
 
 Y recordá: cada pequeño paso que das hacia un espacio más verde es un gran paso para tu bienestar.
